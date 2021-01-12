@@ -1,6 +1,0 @@
-2020-04-05 01:43:31.597 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:652 - The following profiles are active: dev
-2020-04-05 01:43:33.812 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
-2020-04-05 01:43:35.670 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
-2020-04-05 01:43:37.414 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-05 01:43:37.426 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-05 01:43:40.434 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:59  - Started TestDaoMapper in 11.646 seconds (JVM running for 13.097)

@@ -1,7 +1,0 @@
-2020-05-24 21:17:01.294 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:652 - The following profiles are active: dev
-2020-05-24 21:17:04.468 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
-2020-05-24 21:17:06.596 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
-2020-05-24 21:17:08.124 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
-2020-05-24 21:17:08.142 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
-2020-05-24 21:17:10.978 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:59  - Started TestDaoMapper in 12.871 seconds (JVM running for 14.541)
-2020-05-24 21:17:12.188 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
