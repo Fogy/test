@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.WorksMapper">
+    <resultMap id="BaseResultMap" type="com.vtu.model.Works">
+        <id column="works_id" jdbcType="BIGINT" property="worksId" />
+        <result column="account_id" jdbcType="BIGINT" property="accountId" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="desc" jdbcType="VARCHAR" property="desc" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="price" jdbcType="DECIMAL" property="price" />
+        <result column="key_word" jdbcType="VARCHAR" property="keyWord" />
+        <result column="types_id" jdbcType="INTEGER" property="typesId" />
+        <result column="status" jdbcType="VARCHAR" property="status" />
+        <result column="channel" jdbcType="VARCHAR" property="channel" />
+        <result column="colorSytem" jdbcType="VARCHAR" property="colorsytem" />
+        <result column="duration" jdbcType="VARCHAR" property="duration" />
+        <result column="version" jdbcType="VARCHAR" property="version" />
+        <result column="resolution" jdbcType="VARCHAR" property="resolution" />
+        <result column="works_url" jdbcType="VARCHAR" property="worksUrl" />
+        <result column="md5" jdbcType="VARCHAR" property="md5" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="size" jdbcType="DOUBLE" property="size" />
+        <result column="compress_url" jdbcType="VARCHAR" property="compressUrl" />
+        <result column="preview_url" jdbcType="VARCHAR" property="previewUrl" />
+        <result column="synthesis_url" jdbcType="VARCHAR" property="synthesisUrl" />
+        <result column="zip_url" jdbcType="VARCHAR" property="zipUrl" />
+        <result column="material" jdbcType="VARCHAR" property="material" />
+        <result column="material_type" jdbcType="VARCHAR" property="materialType" />
+        <result column="modify_scopy" jdbcType="VARCHAR" property="modifyScope" />
+        <result column="shoper_type" jdbcType="VARCHAR" property="shoperType" />
+    </resultMap>
+  <sql id="Base_Column_List">
+    works_id, account_id, title, `desc`, `type`, price, key_word, types_id, status, channel,
+    colorSytem, duration, version, resolution, works_url, md5, `name`, `size`, compress_url,
+    preview_url, synthesis_url, zip_url,material,material_type,modify_scopy,shoper_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_works
+    where works_id = #{worksId,jdbcType=BIGINT}
+  </select>
+    <select id="getPersonManage" resultMap="BaseResultMap">
+        SELECT
+            w.*
+            FROM tb_works w
+        <where>
+        w.account_id=#{works.accountId}
+        and (w.is_del IS NULL || length(w.is_del)!=0)
+        </where>
+        ORDER BY w.works_id desc
+    </select>
+<select id="getWorksByCondition" resultMap="BaseResultMap">
+    SELECT
+    w.*
+    FROM tb_works w
+    <where>
+        <if test="works.worksId != null">
+            and w.works_id = #{works.worksId}
+        </if>
+        <if test="works.status != null">
+           and w.status LIKE concat('%',#{works.status},'%')
+        </if>
+        <if test="works.type != null">
+            and w.type LIKE concat('%',#{works.type},'%')
+        </if>
+        <if test="works.keyWord != null">
+            and (
+             w.key_word LIKE concat('%', #{works.keyWord},'%')
+            OR w.desc LIKE concat('%', #{works.keyWord},'%')
+            OR w.title LIKE concat('%', #{works.keyWord},'%')
+            )
+        </if>
+        <if test="works.version != null">
+            and w.version LIKE concat('%', #{works.version},'%')
+        </if>
+        <if test="works.channel != null and works.channel != ''">
+            and w.channel LIKE concat('%', #{works.channel},'%')
+        </if>
+        <if test="works.resolution != null and works.resolution != ''">
+            and
+             (
+            #{works.resolution}  &lt;= substring_index(resolution,'×','1')
+             OR
+            #{works.resolution}  &lt;= substring_index(resolution,'×','2')
+            )
+        </if>
+        and (w.is_del IS NULL || length(w.is_del)!=0)
+    </where>
+    ORDER BY w.works_id desc
+</select>
+<select id="searchWorksBykeyWord" resultMap="BaseResultMap">
+    SELECT
+    w.w*
+    FROM tb_works w
+    WHERE w.key_word LIKE concat('%',#{keyWord, jdbcType=VARCHAR},'%') and (w.is_del IS NULL || length(w.is_del)!=0) ORDER BY w.works_id
+</select>
+<select id="getWorksDetialsById" resultMap="BaseResultMap">
+    SELECT
+    w.*
+    FROM tb_works w
+    WHERE w.works_id = #{worksId, jdbcType=BIGINT} order by w.works_id
+</select>
+<update id="auditingWorks" parameterType="com.vtu.model.Works">
+    update tb_works
+    set
+      status = #{status,jdbcType=VARCHAR}
+    where works_id = #{worksId,jdbcType=BIGINT}
+</update>
+  <select id="selectByAccountId" resultMap="BaseResultMap">
+      SELECT
+          *
+      FROM
+          tb_works
+       <where>
+           <if test="status != null">
+               and status LIKE concat('%',#{status},'%')
+           </if>
+           <if test="accountId != null">
+               and account_id LIKE concat('%', #{accountId},'%')
+           </if>
+           <if test="type != null">
+               and type LIKE concat('%', #{type},'%')
+           </if>
+           and (is_del IS NULL || length(is_del)!=0)
+
+       </where>
+
+</select>
+    <!--根据作品Id查询作品-->
+    <select id="getWorksById" resultMap="BaseResultMap">
+        SELECT
+          *
+      FROM
+          tb_works
+      WHERE
+          works_id = #{worksIds}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_works
+    where works_id = #{worksId,jdbcType=BIGINT}
+  </delete>
+
+    <!--根据作品Id删除-->
+    <delete id="delWorksById" parameterType="java.lang.String">
+    delete from tb_works
+    where works_id in (${worksIds,jdbcType=VARCHAR} )
+    </delete>
+    <!--插入作品并返回主键Id-->
+  <insert id="insert" parameterType="com.vtu.model.Works">
+      <selectKey resultType="java.lang.Long" keyProperty="worksId" order="AFTER" >
+          SELECT LAST_INSERT_ID()
+      </selectKey>
+      insert into tb_works (works_id, account_id, title,
+      `desc`, `type`, price,
+      key_word, types_id, status,
+      channel, colorSytem, duration,
+      version, resolution, works_url,
+      md5, `name`, `size`, compress_url,
+      preview_url, synthesis_url, zip_url,modify_scopy,shoper_type
+      )
+      values (#{worksId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR},
+      #{desc,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL},
+      #{keyWord,jdbcType=VARCHAR}, #{typesId,jdbcType=INTEGER}, #{status,jdbcType=VARCHAR},
+      #{channel,jdbcType=VARCHAR}, #{colorsytem,jdbcType=VARCHAR}, #{duration,jdbcType=VARCHAR},
+      #{version,jdbcType=VARCHAR}, #{resolution,jdbcType=VARCHAR}, #{worksUrl,jdbcType=VARCHAR},
+      #{md5,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{size,jdbcType=DOUBLE}, #{compressUrl,jdbcType=VARCHAR},
+      #{previewUrl,jdbcType=VARCHAR}, #{synthesisUrl,jdbcType=VARCHAR}, #{zipUrl,jdbcType=VARCHAR},
+       #{modifyScope,jdbcType=VARCHAR},#{shoperType,jdbcType=VARCHAR}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.vtu.model.Works">
+        insert into tb_works
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="worksId != null">
+                works_id,
+            </if>
+            <if test="accountId != null">
+                account_id,
+            </if>
+            <if test="title != null">
+                title,
+            </if>
+            <if test="desc != null">
+                desc,
+            </if>
+            <if test="type != null">
+                type,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="keyWord != null">
+                key_word,
+            </if>
+            <if test="typesId != null">
+                types_id,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="channel != null">
+                channel,
+            </if>
+            <if test="colorsytem != null">
+                colorSytem,
+            </if>
+            <if test="duration != null">
+                duration,
+            </if>
+            <if test="version != null">
+                version,
+            </if>
+            <if test="resolution != null">
+                resolution,
+            </if>
+            <if test="worksUrl != null">
+                works_url,
+            </if>
+            <if test="md5 != null">
+                md5,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="size != null">
+                size,
+            </if>
+            <if test="compressUrl != null">
+                compress_url,
+            </if>
+            <if test="previewUrl != null">
+                preview_url,
+            </if>
+            <if test="synthesisUrl != null">
+                synthesis_url,
+            </if>
+            <if test="zipUrl != null">
+                zip_url,
+            </if>
+            <if test="modifyScope != null">
+                modify_scopy,
+            </if>
+            <if test="shoperType != null">
+                shoper_type,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="worksId != null">
+                #{worksId,jdbcType=BIGINT},
+            </if>
+            <if test="accountId != null">
+                #{accountId,jdbcType=BIGINT},
+            </if>
+            <if test="title != null">
+                #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="desc != null">
+                #{desc,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="price != null">
+                #{price,jdbcType=DECIMAL},
+            </if>
+            <if test="keyWord != null">
+                #{keyWord,jdbcType=VARCHAR},
+            </if>
+            <if test="typesId != null">
+                #{typesId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="channel != null">
+                #{channel,jdbcType=VARCHAR},
+            </if>
+            <if test="colorsytem != null">
+                #{colorsytem,jdbcType=VARCHAR},
+            </if>
+            <if test="duration != null">
+                #{duration,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null">
+                #{version,jdbcType=VARCHAR},
+            </if>
+            <if test="resolution != null">
+                #{resolution,jdbcType=VARCHAR},
+            </if>
+            <if test="worksUrl != null">
+                #{worksUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="md5 != null">
+                #{md5,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="size != null">
+                #{size,jdbcType=DOUBLE},
+            </if>
+            <if test="compressUrl != null">
+                #{compressUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="previewUrl != null">
+                #{previewUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="synthesisUrl != null">
+                #{synthesisUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="zipUrl != null">
+                #{zipUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="modifyScope != null">
+                #{modifyScope,jdbcType=VARCHAR},
+            </if>
+            <if test="shoperType != null">
+                #{shoperType,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.Works">
+    update tb_works
+    set account_id = #{accountId,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      desc = #{desc,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      key_word = #{keyWord,jdbcType=VARCHAR},
+      types_id = #{typesId,jdbcType=INTEGER},
+      status = #{status,jdbcType=VARCHAR},
+      channel = #{channel,jdbcType=VARCHAR},
+      colorSytem = #{colorsytem,jdbcType=VARCHAR},
+      duration = #{duration,jdbcType=VARCHAR},
+      version = #{version,jdbcType=VARCHAR},
+      resolution = #{resolution,jdbcType=VARCHAR},
+      works_url = #{worksUrl,jdbcType=VARCHAR},
+      md5 = #{md5,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      size = #{size,jdbcType=DOUBLE},
+      compress_url = #{compressUrl,jdbcType=VARCHAR},
+      preview_url = #{previewUrl,jdbcType=VARCHAR},
+      synthesis_url = #{synthesisUrl,jdbcType=VARCHAR},
+      zip_url = #{zipUrl,jdbcType=VARCHAR},
+      modify_scopy = #{modifyScope,jdbcType=VARCHAR},
+      shoper_type = #{shoperType,jdbcType=VARCHAR}
+    where works_id = #{worksId,jdbcType=BIGINT}
+  </update>
+    <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.Works">
+        update tb_works
+        <set>
+            <if test="accountId != null">
+                account_id = #{accountId,jdbcType=BIGINT},
+            </if>
+            <if test="title != null">
+                title = #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="desc != null">
+                desc = #{desc,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                type = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="price != null">
+                price = #{price,jdbcType=DECIMAL},
+            </if>
+            <if test="keyWord != null">
+                key_word = #{keyWord,jdbcType=VARCHAR},
+            </if>
+            <if test="typesId != null">
+                types_id = #{typesId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="channel != null">
+                channel = #{channel,jdbcType=VARCHAR},
+            </if>
+            <if test="colorsytem != null">
+                colorSytem = #{colorsytem,jdbcType=VARCHAR},
+            </if>
+            <if test="duration != null">
+                duration = #{duration,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null">
+                version = #{version,jdbcType=VARCHAR},
+            </if>
+            <if test="resolution != null">
+                resolution = #{resolution,jdbcType=VARCHAR},
+            </if>
+            <if test="worksUrl != null">
+                works_url = #{worksUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="md5 != null">
+                md5 = #{md5,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="size != null">
+                size = #{size,jdbcType=DOUBLE},
+            </if>
+            <if test="compressUrl != null">
+                compress_url = #{compressUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="previewUrl != null">
+                preview_url = #{previewUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="synthesisUrl != null">
+                synthesis_url = #{synthesisUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="zipUrl != null">
+                zip_url = #{zipUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="materialType != null">
+                material_type = #{materialType,jdbcType=VARCHAR},
+            </if>
+            <if test="material != null">
+                material = #{material,jdbcType=VARCHAR},
+            </if>
+            <if test="material != null">
+                material = #{material,jdbcType=VARCHAR},
+            </if>
+            <if test="modifyScope != null">
+                modify_scopy = #{modifyScope,jdbcType=VARCHAR},
+            </if>
+            <if test="shoperType != null">
+                shoper_type = #{shoperType,jdbcType=VARCHAR},
+            </if>
+            <if test="isDel != null">
+                is_del = #{isDel,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where works_id = #{worksId,jdbcType=BIGINT}
+    </update>
+    <!--更新作品-->
+    <!--<update id="updateWorks">
+    update tb_works
+    set works_title = #{works.worksTitle,jdbcType=VARCHAR},
+      works_desc = #{works.worksDesc,jdbcType=VARCHAR},
+      price = #{works.price,jdbcType=DECIMAL},
+      key_word = #{works.keyWord,jdbcType=VARCHAR},
+      types_id = #{works.typesId,jdbcType=BIGINT},
+      status = #{works.status,jdbcType=VARCHAR},
+      colorSytem=#{works.colorSytem,jdbcType=VARCHAR},
+      channel=#{works.channel,jdbcType=VARCHAR},
+      version=#{works.version,jdbcType=VARCHAR},
+      duration=#{works.duration,jdbcType=BIGINT},
+      resolution=#{works.resolution,jdbcType=VARCHAR}
+    where works_id = #{works.worksId,jdbcType=BIGINT}
+    </update>-->
+</mapper>

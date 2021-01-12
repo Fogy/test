@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.PreviewUrlMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.PreviewUrl">
+    <id column="preview_url_id" jdbcType="BIGINT" property="previewUrlId" />
+    <result column="works_id" jdbcType="BIGINT" property="worksId" />
+    <result column="preview_url" jdbcType="VARCHAR" property="previewUrl" />
+    <result column="preview_name" jdbcType="VARCHAR" property="previewName" />
+    <result column="preview_size" jdbcType="DOUBLE" property="previewSize" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    preview_url_id, works_id, preview_url
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_preview_url
+    where preview_url_id = #{previewUrlId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_preview_url
+    where preview_url_id = #{previewUrlId,jdbcType=BIGINT}
+  </delete>
+  <!--插入预览作品-->
+  <insert id="insertPreviewUrl">
+    insert into tb_preview_url (works_id, preview_url,preview_name,preview_size
+      )
+    values
+     <foreach collection="works.previewUrls" item="prev"  separator=",">
+       (#{works.worksId,jdbcType=BIGINT}, #{prev.previewUrl,jdbcType=VARCHAR},
+       #{prev.previewName,jdbcType=VARCHAR},#{prev.previewSize,jdbcType=DOUBLE})
+     </foreach>
+
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.PreviewUrl">
+    insert into tb_preview_url
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="previewUrlId != null">
+        preview_url_id,
+      </if>
+      <if test="worksId != null">
+        works_id,
+      </if>
+      <if test="previewUrl != null">
+        preview_url,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="previewUrlId != null">
+        #{previewUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="worksId != null">
+        #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="previewUrl != null">
+        #{previewUrl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.PreviewUrl">
+    update tb_preview_url
+    <set>
+      <if test="worksId != null">
+        works_id = #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="previewUrl != null">
+        preview_url = #{previewUrl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where preview_url_id = #{previewUrlId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.PreviewUrl">
+    update tb_preview_url
+    set works_id = #{worksId,jdbcType=BIGINT},
+      preview_url = #{previewUrl,jdbcType=VARCHAR}
+    where preview_url_id = #{previewUrlId,jdbcType=BIGINT}
+  </update>
+</mapper>

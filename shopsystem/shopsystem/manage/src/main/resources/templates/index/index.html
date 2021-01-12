@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:replace="/commons/common_header::common_header(~{},~{},~{})">
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<div class="page-wrapper">
+    <!--首页导航开始-->
+    <div th:replace="/commons/common_navbar">
+    </div>
+    <!--首页导航结束-->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!--侧边导航开始-->
+        <div th:replace="/commons/common_side"></div>
+        <!--侧边导航结束-->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN PAGE BAR -->
+                <!--<div class="page-bar">
+                </div>-->
+                <!-- END PAGE BAR -->
+                <!--轮播图开始-->
+                <!--<div class="row  no-space  margin-bottom-20">
+                    <div class="col-md-12  no-space">
+                        <div id="carousel-ad" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-ad" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-ad" data-slide-to="1"></li>
+                                <li data-target="#carousel-ad" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img class="img-responsive center-block"
+                                                              src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+                                </div>
+                                <div class="item"><img class="img-responsive center-block"
+                                                       src="https://static.runoob.com/images/mix/img_nature_wide.jpg"></div>
+                                <div class="item"><img class="img-responsive center-block"
+                                                       src="https://static.runoob.com/images/mix/img_mountains_wide.jpg"></div>
+                            </div>
+                        </div>
+
+                        &lt;!&ndash; Controls &ndash;&gt;
+                        <a class="left carousel-control" href="#carousel-ad" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-ad" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+
+
+                </div>-->
+                <!--轮播图结束-->
+                <!--精品素材开始-->
+                <!-- <div class="row">
+                 <div class="col-md-12">
+                     <div class="portlet light portlet-fit bordered">
+                         <div class="portlet-title">
+                             <div class="caption">
+                                 <i class=" icon-layers font-green"></i>
+                                 <span class="caption-subject font-green bold uppercase">精品素材</span>
+                             </div>
+                         </div>
+                         <div class="portlet-body">
+                             <div class="mt-element-card mt-element-overlay">
+                                 <div class="row">
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                         <div class="mt-card-item">
+                                             <div class="mt-card-avatar mt-overlay-1">
+                                                 <img src="../../static/assets/pages/img/avatars/team1.jpg"/>
+                                                 <div class="mt-overlay">
+                                                     <ul class="mt-info">
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-magnifier"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-link"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                             <div class="mt-card-content">
+                                                 <h3 class="mt-card-name">Mark Anthony</h3>
+                                                 <p class="mt-card-desc font-grey-mint">Managing Director</p>
+                                                 <div class="mt-card-social">
+                                                     <ul>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-facebook"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-twitter"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-dribbble"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                         <div class="mt-card-item">
+                                             <div class="mt-card-avatar mt-overlay-1 mt-scroll-down">
+                                                 <img src="../../static/assets/pages/img/avatars/team2.jpg"/>
+                                                 <div class="mt-overlay mt-top">
+                                                     <ul class="mt-info">
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-magnifier"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-link"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                             <div class="mt-card-content">
+                                                 <h3 class="mt-card-name">Denzel Wash</h3>
+                                                 <p class="mt-card-desc font-grey-mint">Finance Director</p>
+                                                 <div class="mt-card-social">
+                                                     <ul>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-facebook"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-twitter"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-dribbble"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                         <div class="mt-card-item">
+                                             <div class="mt-card-avatar mt-overlay-1 mt-scroll-up">
+                                                 <img src="../../static/assets/pages/img/avatars/team3.jpg"/>
+                                                 <div class="mt-overlay">
+                                                     <ul class="mt-info">
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-magnifier"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-link"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                             <div class="mt-card-content">
+                                                 <h3 class="mt-card-name">David Goodman</h3>
+                                                 <p class="mt-card-desc font-grey-mint">Creative Director</p>
+                                                 <div class="mt-card-social">
+                                                     <ul>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-facebook"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-twitter"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-dribbble"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                         <div class="mt-card-item">
+                                             <div class="mt-card-avatar mt-overlay-1 mt-scroll-left">
+                                                 <img src="../../static/assets/pages/img/avatars/team4.jpg"/>
+                                                 <div class="mt-overlay">
+                                                     <ul class="mt-info">
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-magnifier"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a class="btn default btn-outline" href="javascript:;">
+                                                                 <i class="icon-link"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                             <div class="mt-card-content">
+                                                 <h3 class="mt-card-name">Lucy Ling</h3>
+                                                 <p class="mt-card-desc font-grey-mint">HR Director</p>
+                                                 <div class="mt-card-social">
+                                                     <ul>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-facebook"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-twitter"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="javascript:;">
+                                                                 <i class="icon-social-dribbble"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>-->
+                <!--精品素材结束-->
+
+
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- 页脚开始 -->
+    <div th:replace="/commons/common_footer">
+    </div>
+    <!-- 页脚结束 -->
+
+    <!-- END FOOTER -->
+</div>
+<!-- 快速导航开始 -->
+<!--<div th:replace="/commons/common_quick_nav">-->
+
+</div>
+<!-- 快速导航结束 -->
+<!--登录模态框开始-->
+<div th:replace="/index/index_login_model"></div>
+<!--登录模态框结束-->
+<!--邮箱登录开始-->
+<!--登录模态框开始-->
+<div th:replace="/index/index_email_model"></div>
+<!--邮箱登录结束-->
+<!--引入公共js开始-->
+<div th:include="/commons/common_js::common_js(~{::script})">
+    <!-- END THEME LAYOUT SCRIPTS -->
+
+</div>
+<script>
+    $(function () {
+        /**
+         * 邮件发送
+         */
+        $("#email_send").click(function () {
+            $("#login_model").modal('hide');
+            $("#email_model").modal('show');
+        });
+
+        /**
+         * 点击发送邮件地址
+         */
+        $("#send_email_auth").click(function () {
+            //发送邮箱
+            $.ajax({
+                type:"post",
+                url:"/login/email",
+                data:{
+                    "email":$("#email_adress").val()
+                },
+                dataType:"json",
+                success:function(data){
+                    console.info(data);
+                    alert(data)
+
+                }
+            })
+
+        });
+
+    });
+</script>
+<!--引入公共js结束-->
+</body>
+
+</html>

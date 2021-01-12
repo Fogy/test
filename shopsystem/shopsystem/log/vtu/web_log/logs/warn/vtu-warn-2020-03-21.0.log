@@ -1,0 +1,1 @@
+2020-03-21 01:22:53.710 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1584724973710, current=DOWN, previous=UP]

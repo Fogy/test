@@ -1,0 +1,4 @@
+2020-11-24 22:21:54.149 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-11-24 22:21:54.521 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-11-24 22:21:54.527 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-11-24 23:23:00.400 WARN  --- [Thread-29] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606231380400, current=DOWN, previous=UP]

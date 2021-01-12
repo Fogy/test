@@ -1,0 +1,69 @@
+2020-10-09 22:35:09.402 INFO  --- [restartedMain] com.vtu.ServiceApplication Line:652 - The following profiles are active: dev
+2020-10-09 22:35:11.558 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8762"]
+2020-10-09 22:35:11.574 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-09 22:35:11.574 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-09 22:35:11.871 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-09 22:35:12.043 INFO  --- [restartedMain] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-09 22:35:23.542 INFO  --- [restartedMain] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-09 22:35:23.558 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Stopping service [Tomcat]
+2020-10-09 22:47:01.566 INFO  --- [restartedMain] com.vtu.ServiceApplication Line:652 - The following profiles are active: dev
+2020-10-09 22:47:03.597 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8762"]
+2020-10-09 22:47:03.613 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-09 22:47:03.613 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-09 22:47:03.769 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-09 22:47:04.019 INFO  --- [restartedMain] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-09 22:47:15.441 INFO  --- [restartedMain] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-09 22:47:15.456 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Stopping service [Tomcat]
+2020-10-09 22:54:30.615 INFO  --- [restartedMain] com.vtu.ServiceApplication Line:652 - The following profiles are active: dev
+2020-10-09 22:54:32.646 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8762"]
+2020-10-09 22:54:32.662 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-09 22:54:32.662 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-09 22:54:32.959 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-09 22:54:33.084 INFO  --- [restartedMain] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-09 22:54:35.177 INFO  --- [restartedMain] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-09 22:54:36.006 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-09 22:54:36.006 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-09 22:54:37.834 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-10-09 22:54:38.224 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-10-09 22:54:38.240 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-10-09 22:54:38.380 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-10-09 22:54:38.380 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-10-09 22:54:38.802 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-10-09 22:54:39.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-10-09 22:54:39.271 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-10-09 22:54:39.287 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-10-09 22:54:39.287 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-09 22:54:39.287 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1602255279287 with initial instances count: 0
+2020-10-09 22:54:39.287 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1602255279287, current=UP, previous=STARTING]
+2020-10-09 22:54:39.302 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_SERVICE/DESKTOP-CTAQJKR:service:8762: registering service...
+2020-10-09 22:54:39.318 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8762"]
+2020-10-09 22:54:39.443 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_SERVICE/DESKTOP-CTAQJKR:service:8762 - registration status: 204
+2020-10-09 22:54:39.662 INFO  --- [restartedMain] com.vtu.ServiceApplication Line:59  - Started ServiceApplication in 11.891 seconds (JVM running for 14.583)
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: false
+2020-10-09 22:55:09.289 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-10-09 22:55:09.445 INFO  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-10-09 22:55:16.616 INFO  --- [http-nio-8762-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-09 22:59:39.028 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:04:39.032 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:09:39.037 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:14:39.040 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:19:39.056 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:24:39.070 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:29:39.075 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:34:39.087 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:39:39.088 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:44:39.101 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:49:39.114 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:54:39.129 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-10-09 23:59:39.136 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration

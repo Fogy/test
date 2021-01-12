@@ -1,0 +1,5 @@
+2020-03-25 00:30:38.764 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1585067438764, current=DOWN, previous=UP]
+2020-03-25 00:30:42.857 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-25 23:20:51.230 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-25 23:20:51.605 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-25 23:20:51.615 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.

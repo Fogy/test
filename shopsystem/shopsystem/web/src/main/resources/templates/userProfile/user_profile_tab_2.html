@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="user_profile_tab_2">
+    <div class="tab-pane" id="tab_2">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-dark">
+                    <span>个人VIP对比:</span>
+                </div>
+                <div class="actions" onclick="oper_person_vip()">
+                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm">开通VIP</label>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr class="success">
+                            <th> VIP分类</th>
+                            <th> 时间周期</th>
+                            <th> 金额/元</th>
+                            <th> 下载企业版素材授权周期</th>
+                            <th> 修改模板次数</th>
+                            <th>素材下载数量</th>
+                            <th> 用户素材折扣</th>
+                            <th> 发票</th>
+                            <th>开通</th>
+                        </tr>
+                        </thead>
+                        <tbody id="my-vip-person">
+                        <tr>
+                            <td rowspan="4" style="vertical-align: middle"> SD(标准版)</td>
+                            <td> 一月</td>
+                            <td> 199</td>
+                            <td> 1年</td>
+                            <td>每天下载3次</td>
+                            <td>0</td>
+                            <td>无</td>
+                            <td>普票</td>
+                        </tr>
+                        <tr>
+                            <td> 一个季度(三个月)</td>
+                            <td> 399</td>
+                            <td> 1年</td>
+                            <td>无限下载</td>
+                            <td>0</td>
+                            <td>无</td>
+                            <td>普票</td>
+                        </tr>
+                        <tr>
+                            <td> 半年(6个月)</td>
+                            <td> 699</td>
+                            <td> 永久</td>
+                            <td>无限下载</td>
+                            <td>1</td>
+                            <td>无</td>
+                            <td>普票</td>
+                        </tr>
+                        <tr class="my-vip">
+                            <td> 一年(12个月)</td>
+                            <td> 999</td>
+                            <td> 永久</td>
+                            <td>无限下载</td>
+                            <td>2</td>
+                            <td>无</td>
+                            <td>普票</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>

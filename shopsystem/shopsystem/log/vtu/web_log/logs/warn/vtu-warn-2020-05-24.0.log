@@ -1,0 +1,14 @@
+2020-05-24 20:58:45.698 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-24 20:58:46.115 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 20:58:46.121 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 20:59:55.779 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1590325195779, current=DOWN, previous=UP]
+2020-05-24 21:00:08.244 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-24 21:00:08.858 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 21:15:59.692 WARN  --- [Thread-26] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1590326159692, current=DOWN, previous=UP]
+2020-05-24 22:37:06.886 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-24 22:37:07.210 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 22:37:07.217 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 22:37:45.564 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1590331065564, current=DOWN, previous=UP]
+2020-05-24 22:37:54.178 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-24 22:37:54.337 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-24 22:49:36.544 WARN  --- [Thread-23] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1590331776544, current=DOWN, previous=UP]

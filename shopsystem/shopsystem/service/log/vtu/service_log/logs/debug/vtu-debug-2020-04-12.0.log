@@ -1,0 +1,4 @@
+2020-04-12 18:34:35.257 DEBUG --- [main] org.apache.ibatis.logging.LogFactory Line:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-12 18:34:43.246 DEBUG --- [main] com.vtu.mapper.TestMapper.selectByPrimaryKey Line:143 - ==>  Preparing: select id, user from test where id = ? 
+2020-04-12 18:34:43.306 DEBUG --- [main] com.vtu.mapper.TestMapper.selectByPrimaryKey Line:143 - ==> Parameters: 1(Integer)
+2020-04-12 18:34:43.387 DEBUG --- [main] com.vtu.mapper.TestMapper.selectByPrimaryKey Line:143 - <==      Total: 1

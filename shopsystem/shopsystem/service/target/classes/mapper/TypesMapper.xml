@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.TypesMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.Types">
+    <id column="types_id" jdbcType="INTEGER" property="typesId" />
+    <result column="types_name" jdbcType="VARCHAR" property="typesName" />
+    <result column="types_desc" jdbcType="VARCHAR" property="typesDesc" />
+    <result column="types_par_id" jdbcType="INTEGER" property="typesParId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    types_id, types_name, types_desc, types_par_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_types
+    where types_id = #{typesId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_types
+    where types_id = #{typesId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.Types">
+    insert into tb_types (types_id, types_name, types_desc, 
+      types_par_id)
+    values (#{typesId,jdbcType=INTEGER}, #{typesName,jdbcType=VARCHAR}, #{typesDesc,jdbcType=VARCHAR}, 
+      #{typesParId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.Types">
+    insert into tb_types
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="typesId != null">
+        types_id,
+      </if>
+      <if test="typesName != null">
+        types_name,
+      </if>
+      <if test="typesDesc != null">
+        types_desc,
+      </if>
+      <if test="typesParId != null">
+        types_par_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="typesId != null">
+        #{typesId,jdbcType=INTEGER},
+      </if>
+      <if test="typesName != null">
+        #{typesName,jdbcType=VARCHAR},
+      </if>
+      <if test="typesDesc != null">
+        #{typesDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="typesParId != null">
+        #{typesParId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.Types">
+    update tb_types
+    <set>
+      <if test="typesName != null">
+        types_name = #{typesName,jdbcType=VARCHAR},
+      </if>
+      <if test="typesDesc != null">
+        types_desc = #{typesDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="typesParId != null">
+        types_par_id = #{typesParId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where types_id = #{typesId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.Types">
+    update tb_types
+    set types_name = #{typesName,jdbcType=VARCHAR},
+      types_desc = #{typesDesc,jdbcType=VARCHAR},
+      types_par_id = #{typesParId,jdbcType=INTEGER}
+    where types_id = #{typesId,jdbcType=INTEGER}
+  </update>
+</mapper>

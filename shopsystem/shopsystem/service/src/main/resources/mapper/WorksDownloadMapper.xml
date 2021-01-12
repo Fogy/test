@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.WorksDownloadMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.WorksDownload">
+    <id column="down_id" jdbcType="BIGINT" property="downId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="works_id" jdbcType="BIGINT" property="worksId" />
+    <result column="down_time" jdbcType="TIMESTAMP" property="downTime" />
+    <result column="works_id" jdbcType="BIGINT" property="worksId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="desc" jdbcType="VARCHAR" property="desc" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="key_word" jdbcType="VARCHAR" property="keyWord" />
+    <result column="types_id" jdbcType="INTEGER" property="typesId" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="colorSytem" jdbcType="VARCHAR" property="colorsytem" />
+    <result column="duration" jdbcType="VARCHAR" property="duration" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="resolution" jdbcType="VARCHAR" property="resolution" />
+    <result column="works_url" jdbcType="VARCHAR" property="worksUrl" />
+    <result column="md5" jdbcType="VARCHAR" property="md5" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="size" jdbcType="DOUBLE" property="size" />
+    <result column="compress_url" jdbcType="VARCHAR" property="compressUrl" />
+    <result column="preview_url" jdbcType="VARCHAR" property="previewUrl" />
+    <result column="synthesis_url" jdbcType="VARCHAR" property="synthesisUrl" />
+    <result column="zip_url" jdbcType="VARCHAR" property="zipUrl" />
+    <result column="material" jdbcType="VARCHAR" property="material" />
+    <result column="material_type" jdbcType="VARCHAR" property="materialType" />
+    <result column="modify_scopy" jdbcType="VARCHAR" property="modifyScope" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    down_id, account_id, works_id, down_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_works_download
+    where down_id = #{downId,jdbcType=BIGINT}
+  </select>
+  <select id="selectByAccountIdAndWorksId"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_works_download
+    where account_id = #{accountId,jdbcType=BIGINT} and works_id =  #{worksId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_works_download
+    where down_id = #{downId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.WorksDownload">
+    insert into tb_works_download (down_id, account_id, works_id, 
+      down_time)
+    values (#{downId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{worksId,jdbcType=BIGINT}, 
+      #{downTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.WorksDownload">
+    insert into tb_works_download
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="downId != null">
+        down_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="worksId != null">
+        works_id,
+      </if>
+      <if test="downTime != null">
+        down_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="downId != null">
+        #{downId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="worksId != null">
+        #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="downTime != null">
+        #{downTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.WorksDownload">
+    update tb_works_download
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="worksId != null">
+        works_id = #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="downTime != null">
+        down_time = #{downTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where down_id = #{downId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.WorksDownload">
+    update tb_works_download
+    set account_id = #{accountId,jdbcType=BIGINT},
+      works_id = #{worksId,jdbcType=BIGINT},
+      down_time = #{downTime,jdbcType=TIMESTAMP}
+    where down_id = #{downId,jdbcType=BIGINT}
+  </update>
+
+  <!--根据用户用查询用户下载记录-->
+  <select id="findAllByAccountId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    SELECT t.*,d.down_time
+     from tb_works t,tb_works_download d
+     WHERE t.works_id=d.works_id AND
+     d.account_id=#{accountId,jdbcType=INTEGER}
+     ORDER BY d.down_time DESC
+  </select>
+</mapper>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="works-comment">
+    <div class="modal fade" id="works-comment-model" tabindex="-1" role="works-comment-model" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">添加评论</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" id="addCommentsId" class="form-horizontal" action="#">
+                        <input style="display: none" type="text" name="fatherCommentId" id="fatherCommentId">
+                        <textarea name="comment" id="comment" th:maxlength="50" class="form-control" rows="3" placeholder="评论长度请勿超过100，请勿发表不正当言论" maxlength="100"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cancel-comment" class="btn dark btn-outline" data-dismiss="modal">取消</button>
+                    <button type="button" id="save-comment" class="btn green">发表</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

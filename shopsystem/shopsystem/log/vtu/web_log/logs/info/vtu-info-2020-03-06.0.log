@@ -1,0 +1,144 @@
+2020-03-06 22:38:30.604 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-03-06 22:38:32.823 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-03-06 22:38:32.839 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-03-06 22:38:32.839 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-03-06 22:38:33.104 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-03-06 22:38:33.682 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-06 22:38:33.682 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-06 22:38:35.651 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-03-06 22:38:36.073 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-03-06 22:38:36.073 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-03-06 22:38:36.214 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-03-06 22:38:36.214 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-03-06 22:38:36.635 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:38:36.979 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-03-06 22:38:36.995 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-03-06 22:38:37.354 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-03-06 22:38:37.354 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-03-06 22:38:37.370 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-06 22:38:37.370 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1583505517370 with initial instances count: 1
+2020-03-06 22:38:37.370 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1583505517370, current=UP, previous=STARTING]
+2020-03-06 22:38:37.385 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-03-06 22:38:37.401 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-03-06 22:38:37.464 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-03-06 22:38:37.932 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 10.124 seconds (JVM running for 12.328)
+2020-03-06 22:38:38.276 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 22:38:38.323 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-03-06 22:38:38.323 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-03-06 22:38:38.339 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-03-06 22:38:38.370 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 22:38:38.370 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@f7778d0
+2020-03-06 22:38:39.354 INFO  --- [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 22:42:02.893 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 22:43:37.003 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:48:37.006 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:53:37.009 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:58:37.011 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:59:46.125 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-03-06 22:59:46.134 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-03-06 22:59:46.216 INFO  --- [Thread-2] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-03-06 22:59:46.226 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-03-06 22:59:49.252 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-03-06 22:59:49.287 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-03-06 22:59:49.309 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-03-06 22:59:52.737 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-03-06 22:59:54.383 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-03-06 22:59:54.384 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-03-06 22:59:54.385 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-03-06 22:59:54.435 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-03-06 22:59:55.090 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-06 22:59:56.747 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-03-06 22:59:56.750 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-03-06 22:59:56.751 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-03-06 22:59:56.752 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-03-06 22:59:56.753 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-03-06 22:59:57.015 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 22:59:57.021 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-03-06 22:59:57.022 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-03-06 22:59:57.022 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-03-06 22:59:57.022 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-03-06 22:59:57.023 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-03-06 22:59:57.023 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-03-06 22:59:57.023 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-03-06 22:59:57.030 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-03-06 22:59:57.032 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-03-06 22:59:57.033 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-06 22:59:57.035 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1583506797035 with initial instances count: 2
+2020-03-06 22:59:57.037 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1583506797037, current=UP, previous=STARTING]
+2020-03-06 22:59:57.039 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-03-06 22:59:57.049 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-03-06 22:59:57.051 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-03-06 22:59:57.526 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 7.047 seconds (JVM running for 1291.907)
+2020-03-06 22:59:57.631 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 22:59:57.638 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-03-06 22:59:57.639 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-03-06 22:59:57.641 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-03-06 22:59:57.644 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 22:59:57.646 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@61838dd2
+2020-03-06 22:59:58.650 INFO  --- [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 23:04:57.038 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:09:43.411 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 23:09:57.074 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:10:55.400 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-03-06 23:10:55.408 INFO  --- [Thread-15] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-03-06 23:10:55.410 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-03-06 23:10:55.419 INFO  --- [Thread-15] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-03-06 23:10:58.422 INFO  --- [Thread-15] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-03-06 23:10:58.431 INFO  --- [Thread-15] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-03-06 23:10:58.444 INFO  --- [Thread-15] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-03-06 23:11:03.078 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-03-06 23:11:05.427 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-03-06 23:11:05.428 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-03-06 23:11:05.428 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-03-06 23:11:05.455 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-03-06 23:11:05.774 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-06 23:11:07.110 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-03-06 23:11:07.112 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-03-06 23:11:07.113 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-03-06 23:11:07.113 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-03-06 23:11:07.113 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-03-06 23:11:07.283 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:11:07.285 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-03-06 23:11:07.286 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-03-06 23:11:07.287 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-03-06 23:11:07.287 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-03-06 23:11:07.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-03-06 23:11:07.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-03-06 23:11:07.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-03-06 23:11:07.294 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-03-06 23:11:07.295 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-03-06 23:11:07.296 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-06 23:11:07.299 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1583507467299 with initial instances count: 1
+2020-03-06 23:11:07.300 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1583507467300, current=UP, previous=STARTING]
+2020-03-06 23:11:07.302 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-03-06 23:11:07.310 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-03-06 23:11:07.312 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-03-06 23:11:07.704 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 8.119 seconds (JVM running for 1962.086)
+2020-03-06 23:11:07.775 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 23:11:07.779 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-03-06 23:11:07.780 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-03-06 23:11:07.781 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-03-06 23:11:07.785 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 23:11:07.787 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@484d9525
+2020-03-06 23:11:08.787 INFO  --- [PollingServerListUpdater-1] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-06 23:11:13.336 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 23:16:07.292 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:21:07.295 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:26:07.298 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:31:07.302 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:36:07.305 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:41:07.308 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:46:07.310 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:51:07.313 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-03-06 23:56:07.316 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration

@@ -1,0 +1,6 @@
+2020-06-04 00:47:56.069 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1591202876069, current=DOWN, previous=UP]
+2020-06-04 00:47:59.156 WARN  --- [DiscoveryClient-1] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-06-04 00:47:59.156 WARN  --- [DiscoveryClient-0] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-06-04 00:48:00.179 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-06-04 00:48:00.207 WARN  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-06-04 00:48:00.215 WARN  --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.VipMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.Vip">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="vip_type" jdbcType="BIGINT" property="vipType" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+    <collection property="vipDetailList" ofType="com.vtu.model.VipDetail">
+      <id column="vip_detail_id" jdbcType="BIGINT" property="vipDetailId" />
+      <result column="vip_id" jdbcType="BIGINT" property="vipId" />
+      <result column="vip_name" jdbcType="VARCHAR" property="vipName" />
+      <result column="prices" jdbcType="DECIMAL" property="prices" />
+      <result column="time_long" jdbcType="INTEGER" property="timeLong" />
+      <result column="time_unit" jdbcType="VARCHAR" property="timeUnit" />
+      <result column="com_material" jdbcType="INTEGER" property="comMaterial" />
+      <result column="material" jdbcType="INTEGER" property="material" />
+      <result column="modial_material" jdbcType="INTEGER" property="modialMaterial" />
+      <result column="custom_discount" jdbcType="DOUBLE" property="customDiscount" />
+      <result column="invoice_type" jdbcType="CHAR" property="invoiceType" />
+    </collection>
+  </resultMap>
+  <resultMap id="BaseResultMap2" type="com.vtu.model.VipDetail">
+    <id column="vip_detail_id" jdbcType="BIGINT" property="vipDetailId" />
+    <result column="vip_id" jdbcType="BIGINT" property="vipId" />
+    <result column="vip_name" jdbcType="VARCHAR" property="vipName" />
+    <result column="prices" jdbcType="DECIMAL" property="prices" />
+    <result column="time_long" jdbcType="INTEGER" property="timeLong" />
+    <result column="time_unit" jdbcType="VARCHAR" property="timeUnit" />
+    <result column="com_material" jdbcType="INTEGER" property="comMaterial" />
+    <result column="material" jdbcType="INTEGER" property="material" />
+    <result column="modial_material" jdbcType="INTEGER" property="modialMaterial" />
+    <result column="custom_discount" jdbcType="DOUBLE" property="customDiscount" />
+    <result column="invoice_type" jdbcType="CHAR" property="invoiceType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, vip_type, type_name
+  </sql>
+  <sql id="Base_Column_List_vipDetail">
+    vip_detail_id,vip_id, vip_name, time_long, time_unit, com_material, material, modial_material, custom_discount,prices,
+    invoice_type,sort_num
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap2">
+    select
+    <include refid="Base_Column_List_vipDetail" />
+    from tb_vip_detail
+    where vip_detail_id = #{id,jdbcType=BIGINT}
+  </select>
+<!--根据vip类型查询vip-->
+  <select id="selectByVipType" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />,
+    <include refid="Base_Column_List_vipDetail" />
+    FROM
+    (SELECT * FROM tb_vip WHERE vip_type=#{vipType,jdbcType=BIGINT}) a
+    LEFT JOIN tb_vip_detail b ON a.id = b.vip_id
+    ORDER BY
+    sort_num,vip_detail_id
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_vip 
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.Vip">
+    insert into tb_vip (id, vip_type, type_name)
+    values (#{id,jdbcType=BIGINT}, #{vipType,jdbcType=VARCHAR}, #{typeName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.Vip">
+    insert into tb_vip
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="vip_type != null">
+        vipType,
+      </if>
+
+      <if test="type_name != null">
+        typeName,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="vip_type != null">
+        #{vipType,jdbcType=BIGINT},
+      </if>
+
+      <if test="type_name != null">
+        #{typeName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.Vip">
+    update tb_vip
+    <set>
+      <if test="vip_type != null">
+        vip_type = #{vipType,jdbcType=BIGINT},
+      </if>
+
+      <if test="type_name != null">
+        type_name = #{typeName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.Vip">
+    update tb_vip
+    set vip_type = #{vipType,jdbcType=BIGINT}
+    set type_name = #{typeName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

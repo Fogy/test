@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="manage_works_model">
+    <div class="modal fade" id="video_model" tabindex="-1" role="vido_model" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">编辑作品</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" id="worksUpForm" class="form-horizontal" action="#">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">预览图片</label>
+                                    <div class="col-md-6">
+                                <span class="fileinput-button">
+                                    <img style="width: 200px" id="mod-previewUrl_show" th:src="@{/imges/car1.jpg}" src="../../static/imges/car1.jpg"/>
+                                    <!--<input type="file" name="previewUrl" id="previewUrl" multiple="multiple">-->
+                                </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">展示大图</label>
+                                    <div class="col-md-6">
+                                <span class="fileinput-button">
+                                    <img style="width: 200px" id="mod-synthesisUrl_show" th:src="@{/imges/car1.jpg}" src="../../static/imges/car1.jpg"/>
+                                    <!--<input type="file" name="synthesisUrl" id="synthesisUrl" multiple="multiple">-->
+                                </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">预览下载</label>
+                                    <div class="col-md-6">
+                                        <p class="form-control-static" >
+                                            <span class="fileinput-button">
+                                                <a id="mod-compressUrl" href="">下载</a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">作品下载</label>
+                                    <div class="col-md-6">
+                                        <p class="form-control-static" >
+                                            <span class="fileinput-button">
+                                                <a id="mod-worksUrl"  href="">下载</a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">编号</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-worksId" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">时长</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-worksDuration" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">标题</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-worksTitle" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">作品关键词</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-keyWord" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">售价</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-price" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">分辨率</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-resolution" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">版本</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-version" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">通道</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-channel" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">色系</label>
+                                    <div class="col-md-6">
+                                        <p id="mod-colorSytem" class="form-control-static" ></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">审核</label>
+                                    <div class="col-md-6">
+                                        <select id="mod-worksStatus" name="worksStatus" class="form-control">
+                                            <option value="auditing">审核中</option>
+                                            <option value="reject">审核不通过</option>
+                                            <option value="pass">审核通过</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">取消</button>
+                    <button type="button" id="saveUpWorks" class="btn green">提交</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</div>
+</html>

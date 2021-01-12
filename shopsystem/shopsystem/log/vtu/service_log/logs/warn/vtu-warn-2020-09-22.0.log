@@ -1,0 +1,16 @@
+2020-09-22 00:14:32.297 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600704872297, current=DOWN, previous=UP]
+2020-09-22 00:14:48.297 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 00:19:54.505 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600705194505, current=DOWN, previous=UP]
+2020-09-22 00:20:11.921 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 00:22:41.351 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600705361351, current=DOWN, previous=UP]
+2020-09-22 00:22:44.379 WARN  --- [DiscoveryClient-0] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-09-22 00:22:58.228 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 00:31:30.815 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600705890815, current=DOWN, previous=UP]
+2020-09-22 00:31:46.972 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 01:14:38.349 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600708478349, current=DOWN, previous=UP]
+2020-09-22 01:14:44.595 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 01:22:25.451 WARN  --- [Thread-21] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600708945451, current=DOWN, previous=UP]
+2020-09-22 01:22:32.501 WARN  --- [Thread-21] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-09-22 22:49:03.689 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-09-22 22:58:53.994 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1600786733994, current=DOWN, previous=UP]
+2020-09-22 22:58:58.088 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect

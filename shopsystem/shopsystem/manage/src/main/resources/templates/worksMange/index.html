@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:replace="/commons/common_header::common_header(~{},~{},~{})">
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<div class="page-wrapper">
+    <!--首页导航开始-->
+    <div th:replace="/commons/common_navbar">
+    </div>
+    <!--首页导航结束-->
+
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"></div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!--侧边导航开始-->
+        <div th:replace="/commons/common_side"></div>
+        <!--侧边导航结束-->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!--快速导航开始-->
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <span>作品管理中心</span>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <span>视频管理</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--快速导航结束-->
+                <!-- BEGIN PAGE TITLE-->
+                <h1 class="page-title"> 作品搜索
+                    <small>请根据关键字对作品搜索</small>
+                </h1>
+                <!-- END PAGE TITLE-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+
+                                    <form action="" class="form">
+                                        <div class="row">
+                                        <div class="col-md-3 form-group">
+                                            <label class="control-label">标题</label>
+                                            <input class="form-control" name="worksTitle" id="worksTitle" placeholder="标题">
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label class="control-label">关键字</label>
+                                            <input class="form-control" name="keyWord" id="keyWord"
+                                                   placeholder="关键字">
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label class="control-label">状态</label>
+                                            <select id="worksStatus" name="worksStatus" class="form-control">
+                                                <option value="auditing">审核中</option>
+                                                <option value="reject">审核不通过</option>
+                                                <option value="pass">审核通过</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <button type="reset" class="btn btn-default">重置</button>
+                                                <button type="button" id="searchWorks" class="btn green">搜索</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable">
+                                    <table id="table1" class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>标题</th>
+                                            <th width="40%">关键字</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- 页脚开始 -->
+    <div th:replace="/commons/common_footer">
+    </div>
+    <!-- 页脚结束 -->
+
+    <!-- END FOOTER -->
+</div>
+<!-- 快速导航开始 -->
+<!--<div th:replace="/commons/common_quick_nav">-->
+
+</div>
+<!-- 快速导航结束 -->
+<!--登录模态框开始-->
+<div th:replace="/index/index_login_model"></div>
+<!--登录模态框结束-->
+<!--邮箱登录开始-->
+<!--登录模态框开始-->
+<div th:replace="/index/index_email_model"></div>
+<!--邮箱登录结束-->
+<!--修改作品模态开始-->
+<div th:replace="/worksMange/manage_works_model"></div>
+<!--修改作品模态结束-->
+<!--引入公共js开始-->
+<div th:include="/commons/common_js::common_js(~{::script})">
+    <!-- END THEME LAYOUT SCRIPTS -->
+    <script th:src="@{/js/worksMange/index.js}" src="../../static/js/worksMange/index.js"></script>
+</div>
+
+<!--引入公共js结束-->
+</body>
+
+</html>

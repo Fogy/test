@@ -1,0 +1,4 @@
+2020-12-05 23:24:58.060 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-05 23:27:32.758 WARN  --- [http-nio-8762-exec-8] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipId' is not present]
+2020-12-05 23:29:10.440 WARN  --- [Thread-38] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1607182150440, current=DOWN, previous=UP]
+2020-12-05 23:29:33.116 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server

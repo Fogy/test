@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="common_navbar">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html">
+                <img src="../static/assets/layouts/layout7/img/logo9.png" alt="logo" class="logo-default"/> </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <span></span>
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN MEGA MENU -->
+
+            <!-- END MEGA MENU -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <!--<li class="dropdown dropdown-extended dropdown-tasks"  >
+                        <a data-toggle="modal" href="#login_model" class="dropdown-toggle font-white"   data-hover="dropdown" data-close-others="true">
+                            登录
+                        </a>
+                    </li>-->
+                    <!--<li class="dropdown dropdown-extended dropdown-tasks" >
+                        <a href="javascript:;" class="dropdown-toggle font-white" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            上传
+                        </a>
+                    </li>
+                    <li class="dropdown dropdown-extended dropdown-tasks" >
+                        <a href="javascript:;" class="dropdown-toggle font-white" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            充值
+                        </a>
+                    </li>-->
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img alt="" class="img-circle" src="../static/assets/layouts/layout/img/avatar3_small.jpg" />
+                            <span class="username username-hide-on-mobile"> Nick </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-user"></i> 个人中心 </a>
+                            </li>
+                            <!--<li>
+                                <a href="/goVIP">
+                                    <i class="icon-calendar"></i>VIP中心</a>
+                            </li>
+                            <li>
+                                <a href="/goSeller">
+                                    <i class="icon-envelope-open"></i> 卖家中心
+                                    <span class="badge badge-danger"> 3 </span>
+                                </a>
+                            </li>-->
+
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="/logOut">
+                                    <i class="icon-key"></i> 退出登入 </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+
+
+
+
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+</div>
+
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.FavMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.Fav">
+    <id column="fav_id" jdbcType="BIGINT" property="favId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="works_id" jdbcType="BIGINT" property="worksId" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <association property="works" javaType="com.vtu.model.Works">
+      <id property="id" column="id" />
+      <result property="worksName" column="works_name"/>
+      <result property="worksDesc" column="works_desc"/>
+    </association>
+    <association property="previewUrl" javaType="com.vtu.model.PreviewUrl">
+      <result property="previewUrl" column="preview_url"/>
+      <result property="previewName" column="preview_name"/>
+    </association>
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    fav_id, account_id, works_id, add_time
+  </sql>
+  <sql id="Base_Column_List_Works">
+    works_name, works_desc, preview_url, preview_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_fav
+    where fav_id = #{favId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_fav
+    where fav_id = #{favId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.Fav">
+    insert into tb_fav (fav_id, account_id, works_id, 
+      add_time)
+    values (#{favId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{worksId,jdbcType=BIGINT},
+      #{addTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.Fav">
+    insert into tb_fav
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="favId != null">
+        fav_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="worksId != null">
+        works_id,
+      </if>
+      <if test="addTime != null">
+        add_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="favId != null">
+        #{favId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="worksId != null">
+        #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="addTime != null">
+        #{addTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.Fav">
+    update tb_fav
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="worksId != null">
+        works_id = #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="addTime != null">
+        add_time = #{addTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where fav_id = #{favId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.Fav">
+    update tb_fav
+    set account_id = #{accountId,jdbcType=BIGINT},
+      works_id = #{worksId,jdbcType=BIGINT},
+      add_time = #{addTime,jdbcType=TIMESTAMP}
+    where fav_id = #{favId,jdbcType=BIGINT}
+  </update>
+
+  <select id="findAllByAccountId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    f.fav_id, f.account_id, f.works_id, f.add_time,
+    w.works_name, w.works_desc,
+    u.preview_url, u.preview_name
+    from tb_fav f
+    LEFT JOIN tb_works w ON f.works_id = w.works_id
+    LEFT JOIN tb_preview_url u ON f.works_id = u.works_id
+    where f.account_id = #{accountId,jdbcType=BIGINT}
+    ORDER BY f.add_time DESC
+  </select>
+</mapper>

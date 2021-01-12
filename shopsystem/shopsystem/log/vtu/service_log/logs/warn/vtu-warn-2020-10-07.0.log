@@ -1,0 +1,5 @@
+2020-10-07 21:08:40.802 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-10-07 21:32:09.064 WARN  --- [http-nio-8762-exec-4] com.alibaba.druid.pool.DruidDataSource Line:1260 - get connection timeout retry : 1
+2020-10-07 21:32:09.064 WARN  --- [http-nio-8762-exec-9] com.alibaba.druid.pool.DruidDataSource Line:1260 - get connection timeout retry : 1
+2020-10-07 21:32:09.064 WARN  --- [http-nio-8762-exec-1] com.alibaba.druid.pool.DruidDataSource Line:1260 - get connection timeout retry : 1
+2020-10-07 21:32:10.064 WARN  --- [http-nio-8762-exec-7] com.alibaba.druid.pool.DruidDataSource Line:1260 - get connection timeout retry : 1

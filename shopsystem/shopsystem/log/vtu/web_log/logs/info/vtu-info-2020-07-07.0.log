@@ -1,0 +1,103 @@
+2020-07-07 00:01:03.044 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-07-07 00:01:06.559 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-07-07 00:01:06.591 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-07-07 00:01:06.591 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-07-07 00:01:07.623 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-07-07 00:01:09.022 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-07 00:01:09.037 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-07 00:01:12.252 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-07-07 00:01:12.888 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-07-07 00:01:12.888 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-07-07 00:01:13.216 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-07-07 00:01:13.216 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-07-07 00:01:13.912 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-07-07 00:01:14.284 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-07-07 00:01:14.284 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-07-07 00:01:14.284 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-07-07 00:01:14.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-07-07 00:01:14.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-07-07 00:01:14.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-07-07 00:01:14.288 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-07-07 00:01:14.791 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-07-07 00:01:14.795 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-07-07 00:01:14.803 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-07 00:01:14.811 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1594051274807 with initial instances count: 1
+2020-07-07 00:01:14.815 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1594051274815, current=UP, previous=STARTING]
+2020-07-07 00:01:14.819 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-07-07 00:01:14.843 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-07-07 00:01:14.891 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-07-07 00:01:15.303 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 16.493 seconds (JVM running for 18.463)
+2020-07-07 00:01:15.548 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-07-07 00:01:15.595 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-07-07 00:01:15.595 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-07-07 00:01:15.595 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-07-07 00:01:15.626 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-07-07 00:01:15.641 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5bace4d
+2020-07-07 00:01:16.417 INFO  --- [http-nio-8765-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-07 00:01:16.615 INFO  --- [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-07-07 00:02:20.793 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传f12d16708fd24c84ad9ed4cb9a035c85.jpg
+2020-07-07 00:02:21.186 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:160 - f12d16708fd24c84ad9ed4cb9a035c85.jpg:上传成功
+2020-07-07 00:02:21.186 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempImport/1594051333577/f12d16708fd24c84ad9ed4cb9a035c85.jpg
+2020-07-07 00:02:21.186 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传bg.jpg
+2020-07-07 00:02:21.278 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:160 - bg.jpg:上传成功
+2020-07-07 00:02:21.278 INFO  --- [http-nio-8765-exec-5] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempOutput/1594051333577/synthesis/bg.jpg
+2020-07-07 00:06:14.298 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-07-07 00:11:14.314 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-07-07 00:14:00.107 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传97f196155e6142eb931ca256f297801d.jpg
+2020-07-07 00:14:01.834 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:160 - 97f196155e6142eb931ca256f297801d.jpg:上传成功
+2020-07-07 00:14:01.834 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempImport/1594052038374/97f196155e6142eb931ca256f297801d.jpg
+2020-07-07 00:14:01.834 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传bg.jpg
+2020-07-07 00:14:01.906 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:160 - bg.jpg:上传成功
+2020-07-07 00:14:01.906 INFO  --- [http-nio-8765-exec-8] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempOutput/1594052038374/synthesis/bg.jpg
+2020-07-07 00:16:14.317 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-07-07 00:16:50.155 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传f05e1a81fb6d4798a93cde760dd2838e.jpg
+2020-07-07 00:16:51.468 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:160 - f05e1a81fb6d4798a93cde760dd2838e.jpg:上传成功
+2020-07-07 00:16:51.472 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempImport/1594052209347/f05e1a81fb6d4798a93cde760dd2838e.jpg
+2020-07-07 00:16:51.472 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传bg.jpg
+2020-07-07 00:16:51.572 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:160 - bg.jpg:上传成功
+2020-07-07 00:16:51.572 INFO  --- [http-nio-8765-exec-7] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempOutput/1594052209347/synthesis/bg.jpg
+2020-07-07 00:17:26.136 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传6d7ecc8c77c3415a947bba4275aad220.jpg
+2020-07-07 00:17:27.423 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:160 - 6d7ecc8c77c3415a947bba4275aad220.jpg:上传成功
+2020-07-07 00:17:27.427 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempImport/1594052245848/6d7ecc8c77c3415a947bba4275aad220.jpg
+2020-07-07 00:17:27.427 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:154 - 阿里云开始上传bg.jpg
+2020-07-07 00:17:27.523 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:160 - bg.jpg:上传成功
+2020-07-07 00:17:27.523 INFO  --- [http-nio-8765-exec-2] com.vtu.web.controller.TempController Line:162 - 阿里云开始上传temps/tempOutput/1594052245848/synthesis/bg.jpg
+2020-07-07 00:19:40.943 INFO  --- [Thread-14] com.netflix.loadbalancer.PollingServerListUpdater Line:53  - Shutting down the Executor Pool for PollingServerListUpdater
+2020-07-07 00:19:40.959 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-07-07 00:19:41.474 INFO  --- [Thread-10] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-07-07 00:19:41.474 INFO  --- [Thread-10] com.netflix.util.concurrent.ShutdownEnabledTimer Line:72  - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2020-07-07 00:19:41.490 INFO  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-07-07 00:19:44.505 INFO  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...

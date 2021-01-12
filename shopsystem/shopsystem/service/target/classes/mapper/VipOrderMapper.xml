@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.VipOrderMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.VipOrder">
+    <id column="out_trade_no" jdbcType="VARCHAR" property="outTradeNo" />
+    <result column="total_amount" jdbcType="DECIMAL" property="totalAmount" />
+    <result column="subject" jdbcType="VARCHAR" property="subject" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="vip_detail_id" jdbcType="BIGINT" property="vipDetailId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    out_trade_no, total_amount, subject, app_id, account_id, status, vip_detail_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_vip_order
+    where out_trade_no = #{outTradeNo,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_vip_order
+    where out_trade_no = #{outTradeNo,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.VipOrder">
+    insert into tb_vip_order (out_trade_no, total_amount, subject, 
+      app_id, account_id, status, 
+      vip_detail_id)
+    values (#{outTradeNo,jdbcType=VARCHAR}, #{totalAmount,jdbcType=DECIMAL}, #{subject,jdbcType=VARCHAR}, 
+      #{appId,jdbcType=VARCHAR}, #{accountId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR}, 
+      #{vipDetailId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.VipOrder">
+    insert into tb_vip_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="outTradeNo != null">
+        out_trade_no,
+      </if>
+      <if test="totalAmount != null">
+        total_amount,
+      </if>
+      <if test="subject != null">
+        subject,
+      </if>
+      <if test="appId != null">
+        app_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="vipDetailId != null">
+        vip_detail_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="outTradeNo != null">
+        #{outTradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="totalAmount != null">
+        #{totalAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="subject != null">
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null">
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="worksId != null">
+        #{worksId,jdbcType=BIGINT},
+      </if>
+      <if test="vipDetailId != null">
+        #{vipDetailId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.VipOrder">
+    update tb_vip_order
+    <set>
+      <if test="totalAmount != null">
+        total_amount = #{totalAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="subject != null">
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null">
+        app_id = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="vipDetailId != null">
+        vip_detail_id = #{vipDetailId,jdbcType=BIGINT},
+      </if>
+    </set>
+    where out_trade_no = #{outTradeNo,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.VipOrder">
+    update tb_vip_order
+    set total_amount = #{totalAmount,jdbcType=DECIMAL},
+      subject = #{subject,jdbcType=VARCHAR},
+      app_id = #{appId,jdbcType=VARCHAR},
+      account_id = #{accountId,jdbcType=BIGINT},
+      status = #{status,jdbcType=VARCHAR},
+      vip_detail_id = #{vipDetailId,jdbcType=BIGINT}
+    where out_trade_no = #{outTradeNo,jdbcType=VARCHAR}
+  </update>
+
+  <update id="update" parameterType="com.vtu.model.VipOrder">
+    update tb_vip_order
+    set
+    status = #{status,jdbcType=VARCHAR}
+    where  out_trade_no = #{outTradeNo,jdbcType=VARCHAR}
+  </update>
+</mapper>

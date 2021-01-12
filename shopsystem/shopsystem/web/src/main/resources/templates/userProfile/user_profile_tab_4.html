@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="user_profile_tab_4">
+    <div class="tab-pane" id="tab_4">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-blue-soft">
+                    <span>账户余额:</span>
+                    <span id="user-balance" class="caption-subject bold uppercase">171.35</span>元
+                </div>
+                <div class="actions">
+                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm">开通VIP</label>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form role="form" class="form-horizontal" action="#">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">选择充值方式</label>
+                        <div class="col-md-6">
+                            <div class="tabbable-line">
+                                <ul class="nav nav-tabs nav-tabs-lg">
+                                    <li class="active"><a href="#tab_zhifu" data-toggle="tab" >支付宝</a></li>
+                                    <li><a href="#tab_weixin" data-toggle="tab">微信</a></li>
+                                </ul>
+                                <div class="tab-content" style="margin-top:10px;border: 1px solid #e7ecf1">
+                                    <div class="tab-pane active" id="tab_zhifu">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">支付宝付款</label>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <button onclick="recharge(50)" type="button" class="btn btn-success btn-sm">50元 &nbsp;</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button onclick="recharge(100)" type="button" class="btn btn-success btn-sm">100元</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button onclick="recharge(200)" type="button" class="btn btn-success btn-sm">200元</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <span id="char-more" class="fa fa-angle-double-down"></span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div id="pay-val-more" class="row" style="margin-top: 20px;display: none">
+                                                    <div class="col-md-3">
+                                                        <button onclick="recharge(300)" type="button" class="btn btn-success btn-sm">300元</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button onclick="recharge(500)" type="button" class="btn btn-success btn-sm">500元</button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <input id="self-recharge-val" type="text" placeholder="自定义金额" class="form-control">
+                                                            <span class="input-group-btn">
+                                                              <button id="self-recharge-btn" class="btn green" type="button">确定</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">充值记录</label>
+                                            <div class="col-md-6">
+                                                <!--<div class="table-scrollable">-->
+                                                    <table id="user-balance-table" class="table table-bordered table-full-width">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>充值金额</th>
+                                                            <th>充值时间</th>
+                                                        </tr>
+                                                        </thead>
+
+                                                    </table>
+                                                <!--</div>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab_weixin">
+                                        微信
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

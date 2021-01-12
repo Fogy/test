@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:replace="/commons/common_header::common_header(~{},~{},~{::link})">
+    <!--<link th:src="@{/static/css/user_profile.css}" rel="stylesheet" href="../../static/css/user_profile.css">-->
+    <link th:href="@{/static/assets/pages/css/profile.css}" href="../../static/assets/pages/css/profile.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/static/css/user_profile.css}" href="../../static/css/user_profile.css" rel="stylesheet" type="text/css"/>
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-full-width">
+<div class="page-wrapper">
+    <!--首页导航开始-->
+    <div th:replace="/commons/common_navbar">
+    </div>
+    <!--首页导航结束-->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!--侧边导航开始-->
+        <div th:replace="/commons/common_side"></div>
+        <!--侧边导航结束-->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!--个人信息管理开始-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- BEGIN PROFILE SIDEBAR -->
+                        <div class="profile-sidebar">
+                            <!-- PORTLET MAIN -->
+                            <div class="portlet light profile-sidebar-portlet ">
+                                <!-- SIDEBAR USERPIC -->
+                                <div class="profile-userpic">
+                                    <!--<img th:src="@{https://vtuweb.oss-cn-beijing.aliyuncs.com/{filename}(filename=${customer.headPortraitUrl})}"-->
+                                    <img id="headerImage" th:src="${session.customer.headerImage}" class="img-responsive" alt=""></div>
+                                <!-- END SIDEBAR USERPIC -->
+                                <!-- SIDEBAR USER TITLE -->
+                                <div class="profile-usertitle">
+                                    <div class="profile-usertitle-name" th:text="${customer.name}"/>
+                                    <div class="profile-usertitle-job" th:text="账号ID+':'+${customer.accountId}"/>
+                                </div>
+                                <!-- END SIDEBAR USER TITLE -->
+                                <!-- SIDEBAR BUTTONS -->
+                                <div class="profile-userbuttons">
+                                    <span class="btn green fileinput-button">
+                                        <i class="fa fa-plus"></i>
+                                        <span> 修改头像 </span>
+                                        <input id="changeHeaderImage" data-url="/changeHeaderImage" type="file" name="headerImage"  multiple="multiple">
+                                    </span>
+                                </div>
+                                <!-- END SIDEBAR BUTTONS -->
+                                <!-- SIDEBAR MENU -->
+                                <div class="profile-usermenu">
+                                    <ul class="nav" id="person-nav">
+                                        <li id="vip-enterprise" class="active" onclick="getVip(1,'my-vip-enterprise')">
+                                            <a href="#tab_1" data-toggle="tab">
+                                                <i class="icon-home"></i> 企业VIP </a>
+                                        </li>
+                                        <li id="vip-person" onclick="getVip(0,'my-vip-person')">
+                                            <a href="#tab_2" data-toggle="tab">
+                                                <i class="icon-settings"></i> 个人VIP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_3" data-toggle="tab">
+                                                <i class="icon-info"></i> 个人中心 </a>
+                                        </li>
+                                        <li>
+                                            <a id="my-balance" href="#tab_4" data-toggle="tab">
+                                                <i class="icon-info"></i> 账户余额 </a>
+                                        </li>
+                                        <li>
+                                            <a id="mydown" href="#tab_5" data-toggle="tab">
+                                                <i class="icon-info"></i> 我的购买 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_6" data-toggle="tab">
+                                                <i class="icon-info"></i> 修改模板 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_7" data-toggle="tab">
+                                                <i class="icon-info"></i> 我的收藏 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- END MENU -->
+                            </div>
+                            <!-- END PORTLET MAIN -->
+                        </div>
+                        <!-- END BEGIN PROFILE SIDEBAR -->
+                        <!-- BEGIN PROFILE CONTENT -->
+                        <div class="profile-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="portlet light ">
+                                        <!--<div class="portlet-title tabbable-line">
+                                        </div>-->
+                                        <div class="portlet-body">
+                                            <div class="tab-content">
+                                                <!--企业VIP开始-->
+                                                <th:block th:include="userProfile/user_profile_tab_1::user_profile_tab_1" />
+                                                <!--企业VIP结束-->
+                                                <!--个人VIP开始-->
+                                                <th:block th:include="userProfile/user_profile_tab_2::user_profile_tab_2" />
+                                                <!--个人VIP结束-->
+                                                <!-- 个人中开始 -->
+                                                <th:block th:include="userProfile/user_profile_tab_3::user_profile_tab_3" />
+                                                <!-- 个人中结束 -->
+                                                <!-- 账户余额开始 -->
+                                                <th:block th:include="userProfile/user_profile_tab_4::user_profile_tab_4" />
+                                                <!-- 账户余额结束 -->
+                                                <!--我的下载开始-->
+                                                <th:block th:include="userProfile/user_profile_tab_5::user_profile_tab_5" />
+                                                <!--我的下载结束-->
+                                                <!--我的下载开始-->
+                                                <th:block th:include="userProfile/user_profile_tab_6::user_profile_tab_6" />
+                                                <!--我的下载结束-->
+                                                <!-- CHANGE PASSWORD TAB -->
+                                                <th:block th:include="userProfile/user_profile_tab_7::user_profile_tab_7" />
+                                                <!-- END CHANGE PASSWORD TAB -->
+                                                <th:block th:include="userProfile/user_profile_tab_8::user_profile_tab_8" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROFILE CONTENT -->
+                    </div>
+                </div>
+                <!--个人信息管理结束-->
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- 页脚开始 -->
+    <div th:replace="/commons/common_footer">
+    </div>
+    <!-- 页脚结束 -->
+
+    <!-- END FOOTER -->
+</div>
+<!-- 快速导航开始 -->
+<div th:replace="/commons/common_quick_nav">
+
+</div>
+<!-- 快速导航结束 -->
+<!--会员购买-->
+<div th:replace="/userProfile/user_profile_open_vip_model"></div>
+<!--会员购买-->
+<!--引入公共js开始-->
+<div th:include="/commons/common_js::common_js(~{::script})">
+    <script th:src="@{/js/userProfile/myVip.js}" src="../../static/js/userProfile/myVip.js" type="text/javascript"></script>
+    <script th:src="@{/js/userProfile/myBalance.js}" src="../../static/js/userProfile/myBalance.js" type="text/javascript"></script>
+    <script th:src="@{/js/userProfile/myDown.js}" src="../../static/js/userProfile/myDown.js" type="text/javascript"></script>
+    <script th:src="@{/js/userProfile/customer.js}" src="../../static/js/userProfile/customer.js" type="text/javascript"></script>
+    <script th:src="@{/js/userProfile/openVip.js}" src="../../static/js/userProfile/openVip.js" type="text/javascript"></script>
+</div>
+<!--引入公共js结束-->
+</body>
+
+</html>

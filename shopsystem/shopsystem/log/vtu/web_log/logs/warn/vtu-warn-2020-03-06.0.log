@@ -1,0 +1,11 @@
+2020-03-06 22:38:33.401 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-06 22:38:33.682 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-06 22:38:33.682 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-06 22:59:46.124 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1583506786123, current=DOWN, previous=UP]
+2020-03-06 22:59:54.657 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-06 22:59:55.088 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-06 23:10:22.115 WARN  --- [http-nio-8765-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2020-03-06 23:10:55.392 WARN  --- [Thread-15] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1583507455392, current=DOWN, previous=UP]
+2020-03-06 23:10:58.421 WARN  --- [DiscoveryClient-0] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-03-06 23:11:05.577 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-06 23:11:05.774 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.

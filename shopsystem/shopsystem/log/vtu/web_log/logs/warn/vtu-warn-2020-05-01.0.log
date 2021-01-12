@@ -1,0 +1,156 @@
+2020-05-01 15:21:45.687 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 15:21:45.986 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 15:21:45.991 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 15:35:14.825 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588318514825, current=DOWN, previous=UP]
+2020-05-01 15:35:30.529 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 15:35:30.766 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 15:35:30.771 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 15:39:21.034 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 15:39:21.332 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 15:39:21.338 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 16:03:55.079 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588320235079, current=DOWN, previous=UP]
+2020-05-01 16:04:13.106 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 16:04:13.446 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 16:04:13.451 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 16:45:51.472 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588322751472, current=DOWN, previous=UP]
+2020-05-01 16:45:59.198 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 16:45:59.336 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 16:50:33.610 WARN  --- [Thread-33] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588323033610, current=DOWN, previous=UP]
+2020-05-01 16:50:40.282 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 16:50:40.397 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:01:51.829 WARN  --- [Thread-71] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588323711829, current=DOWN, previous=UP]
+2020-05-01 17:02:13.717 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 17:02:14.015 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:02:14.021 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:24:54.278 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588325094278, current=DOWN, previous=UP]
+2020-05-01 17:25:09.723 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 17:25:10.059 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:25:10.065 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:28:47.860 WARN  --- [http-nio-8765-exec-3] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:30:12.541 WARN  --- [http-nio-8765-exec-3] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:31:37.833 WARN  --- [http-nio-8765-exec-3] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:33:04.325 WARN  --- [http-nio-8765-exec-3] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:33:33.782 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588325613782, current=DOWN, previous=UP]
+2020-05-01 17:33:55.771 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 17:33:56.077 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:33:56.083 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 17:36:55.666 WARN  --- [http-nio-8765-exec-10] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:38:20.348 WARN  --- [http-nio-8765-exec-10] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:39:45.630 WARN  --- [http-nio-8765-exec-10] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:41:12.132 WARN  --- [http-nio-8765-exec-10] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:42:10.550 WARN  --- [http-nio-8765-exec-2] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:43:35.224 WARN  --- [http-nio-8765-exec-2] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:45:00.580 WARN  --- [http-nio-8765-exec-2] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 17:46:27.055 WARN  --- [http-nio-8765-exec-2] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 18:05:20.387 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588327520387, current=DOWN, previous=UP]
+2020-05-01 18:24:05.527 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 18:24:05.910 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:24:05.921 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:26:27.933 WARN  --- [http-nio-8765-exec-8] com.aliyun.oss Line:70  - [Client]Unable to execute HTTP request: Connect to vtuweb.oss-cn-beijing-internal.aliyuncs.com:443 [vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.9, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.8, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.7, vtuweb.oss-cn-beijing-internal.aliyuncs.com/100.118.58.6] failed: Connection timed out: connect
+[ErrorCode]: SocketException
+[RequestId]: Unknown
+2020-05-01 18:27:29.924 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588328849924, current=DOWN, previous=UP]
+2020-05-01 18:27:55.521 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 18:27:56.690 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:27:56.703 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:35:29.643 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588329329643, current=DOWN, previous=UP]
+2020-05-01 18:35:32.713 WARN  --- [DiscoveryClient-0] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-05-01 18:35:46.780 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 18:35:47.193 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:35:47.201 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:44:44.259 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588329884259, current=DOWN, previous=UP]
+2020-05-01 18:45:16.556 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 18:45:17.242 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:45:17.258 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:52:13.604 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588330333604, current=DOWN, previous=UP]
+2020-05-01 18:52:34.614 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 18:52:34.924 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:52:34.931 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:00:34.372 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588330834372, current=DOWN, previous=UP]
+2020-05-01 19:09:04.166 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:09:04.470 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:09:04.476 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:13:33.380 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588331613380, current=DOWN, previous=UP]
+2020-05-01 19:13:48.161 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:13:48.460 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:13:48.466 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:16:10.301 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588331770301, current=DOWN, previous=UP]
+2020-05-01 19:16:35.965 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:16:36.272 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:16:36.278 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:17:15.409 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588331835408, current=DOWN, previous=UP]
+2020-05-01 19:17:29.228 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:17:29.470 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:17:29.475 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:19:48.800 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:19:49.117 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:19:49.124 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:22:36.342 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588332156342, current=DOWN, previous=UP]
+2020-05-01 19:22:53.303 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-05-01 19:22:53.624 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:22:53.631 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:36:13.521 WARN  --- [Thread-10] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1588332973521, current=DOWN, previous=UP]
+2020-05-01 19:36:17.546 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:36:20.599 WARN  --- [Thread-10] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:36:21.557 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:36:21.559 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:849 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-01 19:36:21.560 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.InstanceInfoReplicator Line:125 - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-01 19:36:24.614 WARN  --- [Thread-10] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect

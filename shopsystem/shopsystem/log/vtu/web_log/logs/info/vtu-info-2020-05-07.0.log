@@ -1,0 +1,488 @@
+2020-05-07 00:02:43.921 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:07:43.948 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:12:43.965 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:17:43.968 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:22:43.969 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:27:43.971 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:30:34.452 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 00:30:34.473 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 00:30:34.578 INFO  --- [Thread-2] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-05-07 00:30:34.597 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-05-07 00:30:37.599 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-05-07 00:30:37.624 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-05-07 00:30:37.640 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-05-07 00:30:40.900 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-05-07 00:30:42.728 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-05-07 00:30:42.728 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-05-07 00:30:42.729 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-05-07 00:30:42.766 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-05-07 00:30:43.116 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 00:30:44.331 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-05-07 00:30:44.336 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 00:30:44.337 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 00:30:44.338 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-05-07 00:30:44.338 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-05-07 00:30:44.512 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:30:44.514 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-05-07 00:30:44.515 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-05-07 00:30:44.515 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-05-07 00:30:44.515 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-05-07 00:30:44.516 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-05-07 00:30:44.516 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-05-07 00:30:44.517 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-05-07 00:30:44.525 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-05-07 00:30:44.527 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-05-07 00:30:44.528 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 00:30:44.530 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1588782644530 with initial instances count: 2
+2020-05-07 00:30:44.531 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1588782644531, current=UP, previous=STARTING]
+2020-05-07 00:30:44.532 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 00:30:44.543 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-05-07 00:30:44.556 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 00:30:44.909 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 6.063 seconds (JVM running for 6244.336)
+2020-05-07 00:30:44.977 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 00:30:44.980 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-05-07 00:30:44.980 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-07 00:30:44.984 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-05-07 00:30:44.987 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 00:30:44.988 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2f015fe2
+2020-05-07 00:30:45.989 INFO  --- [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 00:31:08.936 INFO  --- [http-nio-8765-exec-10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 00:35:44.522 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:40:44.524 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:45:44.526 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 00:46:42.863 INFO  --- [Thread-14] com.netflix.loadbalancer.PollingServerListUpdater Line:53  - Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-07 00:46:42.863 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 00:46:42.878 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 00:46:42.878 INFO  --- [Thread-23] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-05-07 00:46:42.878 INFO  --- [Thread-23] com.netflix.util.concurrent.ShutdownEnabledTimer Line:72  - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2020-05-07 00:46:42.894 INFO  --- [Thread-23] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-05-07 00:46:45.898 INFO  --- [Thread-23] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-05-07 00:46:45.913 INFO  --- [Thread-23] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-05-07 00:46:45.944 INFO  --- [Thread-23] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-05-07 22:55:17.567 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-05-07 22:55:21.911 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-05-07 22:55:21.958 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-05-07 22:55:21.958 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-05-07 22:55:22.583 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-05-07 22:55:24.224 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 22:55:24.224 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 22:55:26.585 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-05-07 22:55:27.094 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 22:55:27.095 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 22:55:27.355 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-05-07 22:55:27.356 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-05-07 22:55:27.807 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 22:55:28.003 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-05-07 22:55:28.003 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-05-07 22:55:28.004 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-05-07 22:55:28.004 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-05-07 22:55:28.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-05-07 22:55:28.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-05-07 22:55:28.005 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-05-07 22:55:28.261 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-05-07 22:55:28.265 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-05-07 22:55:28.270 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 22:55:28.275 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1588863328273 with initial instances count: 1
+2020-05-07 22:55:28.277 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1588863328277, current=UP, previous=STARTING]
+2020-05-07 22:55:28.280 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 22:55:28.299 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-05-07 22:55:28.342 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 22:55:28.467 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 22:55:28.887 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 13.834 seconds (JVM running for 17.836)
+2020-05-07 22:55:29.183 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 22:55:29.229 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-05-07 22:55:29.230 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-07 22:55:29.240 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-05-07 22:55:29.275 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 22:55:29.278 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@c5b9657
+2020-05-07 22:55:30.245 INFO  --- [PollingServerListUpdater-0] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:00:28.019 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:05:28.034 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:10:28.037 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:15:28.040 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:20:28.074 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:25:28.080 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:27:51.585 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:352 - --- 待执行的FFmpeg指令为：---[ffmpeg, -i, E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4]
+2020-05-07 23:27:54.319 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:361 - --- 开始执行FFmpeg指令：--- 执行线程名：java.lang.ProcessBuilder@324b7781
+2020-05-07 23:27:56.941 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 - ffmpeg version 3.4 Copyright (c) 2000-2017 the FFmpeg developers
+2020-05-07 23:27:56.963 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   built with gcc 7.2.0 (GCC)
+2020-05-07 23:27:56.969 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-cuda --enable-cuvid --enable-d3d11va --enable-nvenc --enable-dxva2 --enable-avisynth --enable-libmfx
+2020-05-07 23:27:56.975 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libavutil      55. 78.100 / 55. 78.100
+2020-05-07 23:27:56.980 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libavcodec     57.107.100 / 57.107.100
+2020-05-07 23:27:56.981 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libavformat    57. 83.100 / 57. 83.100
+2020-05-07 23:27:56.982 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libavdevice    57. 10.100 / 57. 10.100
+2020-05-07 23:27:56.985 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libavfilter     6.107.100 /  6.107.100
+2020-05-07 23:27:56.990 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libswscale      4.  8.100 /  4.  8.100
+2020-05-07 23:27:56.991 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libswresample   2.  9.100 /  2.  9.100
+2020-05-07 23:27:56.991 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   libpostproc    54.  7.100 / 54.  7.100
+2020-05-07 23:27:58.496 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 - Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4':
+2020-05-07 23:27:58.507 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   Metadata:
+2020-05-07 23:27:58.516 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     major_brand     : mp42
+2020-05-07 23:27:58.522 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     minor_version   : 0
+2020-05-07 23:27:58.545 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     compatible_brands: mp42mp41
+2020-05-07 23:27:58.586 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:27:58.589 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -   Duration: 00:00:48.13, start: 0.000000, bitrate: 2203 kb/s
+2020-05-07 23:27:58.590 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 540x960, 1881 kb/s, 25 fps, 25 tbr, 25k tbn, 50 tbc (default)
+2020-05-07 23:27:58.592 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:27:58.596 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:27:58.596 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:27:58.597 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : AVC Coding
+2020-05-07 23:27:58.674 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+2020-05-07 23:27:58.677 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:27:58.678 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:27:58.679 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:27:58.680 INFO  --- [Thread-15] com.vtu.web.util.MediaUtil Line:1188 - At least one output file must be specified
+2020-05-07 23:27:59.990 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:375 - --- 已执行的FFmepg命令： ---[ffmpeg -i E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4] 已执行完毕,执行结果： 正常
+2020-05-07 23:28:00.226 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:352 - --- 待执行的FFmpeg指令为：---[ffmpeg, -i, E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4, -i, E:\vtuweb\videoLog\logo.png, -strict, -2, -filter_complex, [0:v]scale=540:-1[int];[1:v]scale=-1:100[img1];[int][img1]overlay=main_w-overlay_w-100:100, -vcodec, libx264, -movflags, faststart, E:\vtuweb\videoOutput\1588865268306\compress\synthesisFile.mp4, -y]
+2020-05-07 23:28:01.133 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:361 - --- 开始执行FFmpeg指令：--- 执行线程名：java.lang.ProcessBuilder@53f8656f
+2020-05-07 23:28:01.477 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - ffmpeg version 3.4 Copyright (c) 2000-2017 the FFmpeg developers
+2020-05-07 23:28:01.478 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   built with gcc 7.2.0 (GCC)
+2020-05-07 23:28:01.480 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-cuda --enable-cuvid --enable-d3d11va --enable-nvenc --enable-dxva2 --enable-avisynth --enable-libmfx
+2020-05-07 23:28:01.487 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libavutil      55. 78.100 / 55. 78.100
+2020-05-07 23:28:01.488 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libavcodec     57.107.100 / 57.107.100
+2020-05-07 23:28:01.489 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libavformat    57. 83.100 / 57. 83.100
+2020-05-07 23:28:01.489 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libavdevice    57. 10.100 / 57. 10.100
+2020-05-07 23:28:01.489 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libavfilter     6.107.100 /  6.107.100
+2020-05-07 23:28:01.489 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libswscale      4.  8.100 /  4.  8.100
+2020-05-07 23:28:01.490 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libswresample   2.  9.100 /  2.  9.100
+2020-05-07 23:28:01.490 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   libpostproc    54.  7.100 / 54.  7.100
+2020-05-07 23:28:01.794 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4':
+2020-05-07 23:28:01.794 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Metadata:
+2020-05-07 23:28:01.807 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     major_brand     : mp42
+2020-05-07 23:28:01.809 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     minor_version   : 0
+2020-05-07 23:28:01.812 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     compatible_brands: mp42mp41
+2020-05-07 23:28:01.812 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:28:01.812 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Duration: 00:00:48.13, start: 0.000000, bitrate: 2203 kb/s
+2020-05-07 23:28:01.813 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 540x960, 1881 kb/s, 25 fps, 25 tbr, 25k tbn, 50 tbc (default)
+2020-05-07 23:28:01.814 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:28:01.815 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:28:01.817 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:28:01.818 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : AVC Coding
+2020-05-07 23:28:01.819 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+2020-05-07 23:28:01.820 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:28:01.821 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:28:01.821 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:28:01.865 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - Input #1, png_pipe, from 'E:\vtuweb\videoLog\logo.png':
+2020-05-07 23:28:01.902 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Duration: N/A, bitrate: N/A
+2020-05-07 23:28:01.904 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Stream #1:0: Video: png, rgba(pc), 500x188 [SAR 2835:2835 DAR 125:47], 25 tbr, 25 tbn, 25 tbc
+2020-05-07 23:28:01.977 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - Stream mapping:
+2020-05-07 23:28:01.977 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Stream #0:0 (h264) -> scale (graph 0)
+2020-05-07 23:28:01.978 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Stream #1:0 (png) -> scale (graph 0)
+2020-05-07 23:28:01.978 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   overlay (graph 0) -> Stream #0:0 (libx264)
+2020-05-07 23:28:01.978 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+2020-05-07 23:28:01.978 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - Press [q] to stop, [?] for help
+2020-05-07 23:28:02.703 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+2020-05-07 23:28:02.719 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] profile High, level 3.1
+2020-05-07 23:28:02.720 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] 264 - core 152 r2851 ba24899 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+2020-05-07 23:28:02.729 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=    1 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A    
+2020-05-07 23:28:02.868 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - Output #0, mp4, to 'E:\vtuweb\videoOutput\1588865268306\compress\synthesisFile.mp4':
+2020-05-07 23:28:02.868 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -   Metadata:
+2020-05-07 23:28:02.868 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     major_brand     : mp42
+2020-05-07 23:28:02.868 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     minor_version   : 0
+2020-05-07 23:28:02.869 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     compatible_brands: mp42mp41
+2020-05-07 23:28:02.869 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     encoder         : Lavf57.83.100
+2020-05-07 23:28:02.869 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:0: Video: h264 (libx264) (avc1 / 0x31637661), yuv420p(progressive), 540x960, q=-1--1, 25 fps, 12800 tbn, 25 tbc (default)
+2020-05-07 23:28:02.869 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:28:02.869 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : Lavc57.107.100 libx264
+2020-05-07 23:28:02.870 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Side data:
+2020-05-07 23:28:02.870 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+2020-05-07 23:28:02.870 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+2020-05-07 23:28:02.870 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:28:11.642 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:28:11.644 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:28:11.645 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : Lavc57.107.100 aac
+2020-05-07 23:28:11.645 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=    5 fps=3.8 q=0.0 size=       0kB time=00:00:00.34 bitrate=   0.0kbits/s speed=0.26x    
+2020-05-07 23:28:11.645 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   13 fps=7.0 q=0.0 size=       0kB time=00:00:00.36 bitrate=   0.0kbits/s speed=0.197x    
+2020-05-07 23:28:11.646 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   15 fps=6.3 q=0.0 size=       0kB time=00:00:00.59 bitrate=   0.0kbits/s speed=0.252x    
+2020-05-07 23:28:11.646 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   22 fps=7.5 q=0.0 size=       0kB time=00:00:00.76 bitrate=   0.0kbits/s speed=0.261x    
+2020-05-07 23:28:11.647 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   25 fps=7.2 q=0.0 size=       0kB time=00:00:01.02 bitrate=   0.0kbits/s speed=0.296x    
+2020-05-07 23:28:11.647 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   32 fps=8.1 q=0.0 size=       0kB time=00:00:01.17 bitrate=   0.0kbits/s speed=0.296x    
+2020-05-07 23:28:11.647 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   35 fps=7.8 q=0.0 size=       0kB time=00:00:01.34 bitrate=   0.0kbits/s speed=0.301x    
+2020-05-07 23:28:11.648 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   41 fps=8.2 q=0.0 size=       0kB time=00:00:01.57 bitrate=   0.0kbits/s speed=0.314x    
+2020-05-07 23:28:11.648 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   45 fps=8.1 q=0.0 size=       0kB time=00:00:01.96 bitrate=   0.0kbits/s speed=0.354x    
+2020-05-07 23:28:11.649 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   47 fps=5.4 q=0.0 size=       0kB time=00:00:01.96 bitrate=   0.0kbits/s speed=0.226x    
+2020-05-07 23:28:28.361 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   52 fps=2.3 q=28.0 size=       0kB time=00:00:01.96 bitrate=   0.2kbits/s speed=0.0881x    
+2020-05-07 23:28:28.557 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   53 fps=2.0 q=28.0 size=       0kB time=00:00:01.96 bitrate=   0.2kbits/s speed=0.0744x    
+2020-05-07 23:28:32.138 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   55 fps=2.0 q=28.0 size=       0kB time=00:00:01.96 bitrate=   0.2kbits/s speed=0.0707x    
+2020-05-07 23:28:32.142 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   55 fps=1.8 q=28.0 size=       0kB time=00:00:01.98 bitrate=   0.2kbits/s speed=0.0658x    
+2020-05-07 23:28:36.932 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   57 fps=1.6 q=28.0 size=       0kB time=00:00:02.36 bitrate=   0.2kbits/s speed=0.0677x    
+2020-05-07 23:28:42.898 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   67 fps=1.6 q=28.0 size=       0kB time=00:00:02.77 bitrate=   0.1kbits/s speed=0.0678x    
+2020-05-07 23:28:46.352 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   80 fps=1.9 q=28.0 size=       0kB time=00:00:03.15 bitrate=   0.1kbits/s speed=0.0762x    
+2020-05-07 23:28:46.354 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=   81 fps=1.8 q=28.0 size=       0kB time=00:00:03.15 bitrate=   0.1kbits/s speed=0.0712x    
+2020-05-07 23:28:46.855 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  113 fps=2.5 q=28.0 size=       0kB time=00:00:04.37 bitrate=   0.1kbits/s speed=0.0975x    
+2020-05-07 23:28:47.367 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  150 fps=3.3 q=28.0 size=       0kB time=00:00:05.97 bitrate=   0.1kbits/s speed=0.132x    
+2020-05-07 23:28:47.929 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  182 fps=4.0 q=28.0 size=       0kB time=00:00:07.16 bitrate=   0.1kbits/s speed=0.156x    
+2020-05-07 23:28:50.429 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  187 fps=4.0 q=28.0 size=       0kB time=00:00:07.57 bitrate=   0.1kbits/s speed=0.162x    
+2020-05-07 23:28:50.448 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  188 fps=3.9 q=28.0 size=       0kB time=00:00:07.57 bitrate=   0.1kbits/s speed=0.156x    
+2020-05-07 23:28:51.716 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  191 fps=3.8 q=28.0 size=       0kB time=00:00:07.57 bitrate=   0.1kbits/s speed=0.153x    
+2020-05-07 23:28:52.105 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  211 fps=4.2 q=28.0 size=       0kB time=00:00:08.36 bitrate=   0.0kbits/s speed=0.167x    
+2020-05-07 23:28:52.642 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  244 fps=4.8 q=28.0 size=       0kB time=00:00:09.55 bitrate=   0.0kbits/s speed=0.189x    
+2020-05-07 23:28:53.140 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  265 fps=5.2 q=28.0 size=     256kB time=00:00:10.38 bitrate= 201.9kbits/s speed=0.203x    
+2020-05-07 23:28:53.640 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  295 fps=5.7 q=28.0 size=     256kB time=00:00:11.71 bitrate= 179.1kbits/s speed=0.227x    
+2020-05-07 23:28:54.154 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  322 fps=6.2 q=28.0 size=     256kB time=00:00:12.77 bitrate= 164.1kbits/s speed=0.245x    
+2020-05-07 23:28:54.681 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  344 fps=6.5 q=28.0 size=     512kB time=00:00:13.56 bitrate= 309.2kbits/s speed=0.258x    
+2020-05-07 23:28:55.204 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  365 fps=6.9 q=28.0 size=     512kB time=00:00:14.37 bitrate= 291.7kbits/s speed=0.27x    
+2020-05-07 23:28:55.709 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  385 fps=7.2 q=28.0 size=     512kB time=00:00:15.16 bitrate= 276.5kbits/s speed=0.282x    
+2020-05-07 23:28:56.219 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  411 fps=7.6 q=28.0 size=     512kB time=00:00:16.36 bitrate= 256.4kbits/s speed=0.302x    
+2020-05-07 23:28:56.763 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  435 fps=8.0 q=28.0 size=     768kB time=00:00:17.17 bitrate= 366.4kbits/s speed=0.314x    
+2020-05-07 23:28:57.221 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  462 fps=8.4 q=28.0 size=     768kB time=00:00:18.36 bitrate= 342.5kbits/s speed=0.333x    
+2020-05-07 23:28:57.817 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  481 fps=8.6 q=28.0 size=     768kB time=00:00:19.17 bitrate= 328.1kbits/s speed=0.344x    
+2020-05-07 23:28:58.322 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  504 fps=8.9 q=28.0 size=    1024kB time=00:00:19.96 bitrate= 420.1kbits/s speed=0.354x    
+2020-05-07 23:28:58.816 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  532 fps=9.4 q=28.0 size=    1024kB time=00:00:21.16 bitrate= 396.4kbits/s speed=0.372x    
+2020-05-07 23:28:59.347 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  558 fps=9.7 q=28.0 size=    1024kB time=00:00:22.37 bitrate= 374.9kbits/s speed=0.39x    
+2020-05-07 23:28:59.952 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  589 fps= 10 q=28.0 size=    1024kB time=00:00:23.57 bitrate= 355.9kbits/s speed=0.407x    
+2020-05-07 23:29:00.469 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  603 fps= 10 q=28.0 size=    1280kB time=00:00:23.97 bitrate= 437.3kbits/s speed=0.41x    
+2020-05-07 23:29:01.015 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  627 fps= 11 q=28.0 size=    1280kB time=00:00:25.17 bitrate= 416.6kbits/s speed=0.426x    
+2020-05-07 23:29:01.519 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  655 fps= 11 q=28.0 size=    1280kB time=00:00:25.98 bitrate= 403.6kbits/s speed=0.436x    
+2020-05-07 23:29:02.079 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  682 fps= 11 q=28.0 size=    1280kB time=00:00:27.15 bitrate= 386.1kbits/s speed=0.452x    
+2020-05-07 23:29:02.578 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  695 fps= 11 q=28.0 size=    1536kB time=00:00:27.58 bitrate= 456.2kbits/s speed=0.455x    
+2020-05-07 23:29:03.144 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  711 fps= 12 q=28.0 size=    1536kB time=00:00:28.37 bitrate= 443.5kbits/s speed=0.464x    
+2020-05-07 23:29:03.637 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  735 fps= 12 q=28.0 size=    1536kB time=00:00:29.20 bitrate= 430.9kbits/s speed=0.474x    
+2020-05-07 23:29:04.161 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  761 fps= 12 q=28.0 size=    1792kB time=00:00:30.35 bitrate= 483.6kbits/s speed=0.488x    
+2020-05-07 23:29:04.710 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  789 fps= 13 q=28.0 size=    1792kB time=00:00:31.57 bitrate= 465.0kbits/s speed=0.503x    
+2020-05-07 23:29:05.199 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  812 fps= 13 q=28.0 size=    1792kB time=00:00:32.36 bitrate= 453.6kbits/s speed=0.512x    
+2020-05-07 23:29:05.893 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  827 fps= 13 q=28.0 size=    1792kB time=00:00:33.17 bitrate= 442.5kbits/s speed=0.519x    
+2020-05-07 23:29:06.529 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  842 fps= 13 q=28.0 size=    2048kB time=00:00:33.55 bitrate= 500.0kbits/s speed=0.52x    
+2020-05-07 23:29:06.979 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  855 fps= 13 q=28.0 size=    2048kB time=00:00:34.19 bitrate= 490.6kbits/s speed=0.526x    
+2020-05-07 23:29:07.556 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  875 fps= 13 q=28.0 size=    2048kB time=00:00:34.77 bitrate= 482.5kbits/s speed=0.53x    
+2020-05-07 23:29:08.119 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  899 fps= 14 q=28.0 size=    2048kB time=00:00:35.96 bitrate= 466.5kbits/s speed=0.544x    
+2020-05-07 23:29:08.620 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  922 fps= 14 q=28.0 size=    2304kB time=00:00:36.77 bitrate= 513.2kbits/s speed=0.552x    
+2020-05-07 23:29:09.120 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  935 fps= 14 q=28.0 size=    2304kB time=00:00:37.31 bitrate= 505.9kbits/s speed=0.556x    
+2020-05-07 23:29:09.643 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  950 fps= 14 q=28.0 size=    2304kB time=00:00:37.97 bitrate= 497.1kbits/s speed=0.561x    
+2020-05-07 23:29:10.144 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  965 fps= 14 q=28.0 size=    2304kB time=00:00:38.40 bitrate= 491.5kbits/s speed=0.563x    
+2020-05-07 23:29:10.644 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame=  985 fps= 14 q=28.0 size=    2560kB time=00:00:39.21 bitrate= 534.9kbits/s speed=0.571x    
+2020-05-07 23:29:11.168 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1005 fps= 15 q=28.0 size=    2560kB time=00:00:40.00 bitrate= 524.3kbits/s speed=0.578x    
+2020-05-07 23:29:11.743 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1025 fps= 15 q=28.0 size=    2560kB time=00:00:40.76 bitrate= 514.4kbits/s speed=0.585x    
+2020-05-07 23:29:12.222 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1042 fps= 15 q=28.0 size=    2560kB time=00:00:41.57 bitrate= 504.4kbits/s speed=0.592x    
+2020-05-07 23:29:12.780 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1063 fps= 15 q=28.0 size=    2816kB time=00:00:42.36 bitrate= 544.5kbits/s speed=0.599x    
+2020-05-07 23:29:13.250 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1082 fps= 15 q=28.0 size=    2816kB time=00:00:43.17 bitrate= 534.3kbits/s speed=0.606x    
+2020-05-07 23:29:13.760 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1103 fps= 15 q=28.0 size=    2816kB time=00:00:43.96 bitrate= 524.7kbits/s speed=0.613x    
+2020-05-07 23:29:14.302 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1124 fps= 16 q=28.0 size=    2816kB time=00:00:44.77 bitrate= 515.2kbits/s speed=0.619x    
+2020-05-07 23:29:14.788 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1145 fps= 16 q=28.0 size=    3072kB time=00:00:45.80 bitrate= 549.4kbits/s speed=0.629x    
+2020-05-07 23:29:15.345 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1172 fps= 16 q=28.0 size=    3072kB time=00:00:46.76 bitrate= 538.2kbits/s speed=0.638x    
+2020-05-07 23:29:15.795 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1197 fps= 16 q=28.0 size=    3072kB time=00:00:47.74 bitrate= 527.1kbits/s speed=0.647x    
+2020-05-07 23:29:16.671 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [mp4 @ 000001f6661572a0] Starting second pass: moving the moov atom to the beginning of the file
+2020-05-07 23:29:16.701 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - frame= 1202 fps= 16 q=-1.0 Lsize=    3314kB time=00:00:48.08 bitrate= 564.6kbits/s speed=0.644x    
+2020-05-07 23:29:16.701 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - video:2513kB audio:764kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.116886%
+2020-05-07 23:29:16.718 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] frame I:5     Avg QP:15.12  size: 44254
+2020-05-07 23:29:16.719 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] frame P:393   Avg QP:20.61  size:  4518
+2020-05-07 23:29:16.720 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] frame B:804   Avg QP:22.06  size:   716
+2020-05-07 23:29:16.720 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] consecutive B-frames:  6.9%  9.5%  6.7% 76.9%
+2020-05-07 23:29:16.720 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] mb I  I16..4: 33.0% 47.4% 19.7%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] mb P  I16..4:  4.7%  8.4%  1.4%  P16..4: 17.4%  3.1%  1.9%  0.0%  0.0%    skip:63.1%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] mb B  I16..4:  0.6%  0.7%  0.1%  B16..8: 11.3%  0.8%  0.1%  direct: 1.1%  skip:85.3%  L0:42.1% L1:53.7% BI: 4.3%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] 8x8 transform intra:56.3% inter:71.0%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] coded y,uvDC,uvAC intra: 22.0% 38.3% 16.2% inter: 2.5% 5.4% 1.2%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] i16 v,h,dc,p: 43% 35%  8% 13%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 17% 40%  2%  2%  2%  2%  2%  3%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 21% 19%  5%  6%  6%  5%  5%  4%
+2020-05-07 23:29:16.721 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] i8c dc,h,v,p: 56% 21% 18%  4%
+2020-05-07 23:29:16.722 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] Weighted P-Frames: Y:4.6% UV:2.8%
+2020-05-07 23:29:16.722 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] ref P L0: 69.5% 10.1% 14.6%  5.6%  0.1%
+2020-05-07 23:29:16.722 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] ref B L0: 86.1% 12.0%  1.9%
+2020-05-07 23:29:16.722 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] ref B L1: 95.6%  4.4%
+2020-05-07 23:29:16.722 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [libx264 @ 000001f66618d8c0] kb/s:428.01
+2020-05-07 23:29:16.750 INFO  --- [Thread-18] com.vtu.web.util.MediaUtil Line:1188 - [aac @ 000001f66685bcc0] Qavg: 505.225
+2020-05-07 23:29:16.767 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:375 - --- 已执行的FFmepg命令： ---[ffmpeg -i E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4 -i E:\vtuweb\videoLog\logo.png -strict -2 -filter_complex [0:v]scale=540:-1[int];[1:v]scale=-1:100[img1];[int][img1]overlay=main_w-overlay_w-100:100 -vcodec libx264 -movflags faststart E:\vtuweb\videoOutput\1588865268306\compress\synthesisFile.mp4 -y] 已执行完毕,执行结果： 正常
+2020-05-07 23:29:16.769 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:352 - --- 待执行的FFmpeg指令为：---[ffmpeg, -i, E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4, -vf, select=between(n\,240\,1200)*not(mod(n\,240)), -vsync, 0, \vtuweb\videoOutput\1588865268306\preview\image_%05d.jpg]
+2020-05-07 23:29:16.777 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:361 - --- 开始执行FFmpeg指令：--- 执行线程名：java.lang.ProcessBuilder@284efedd
+2020-05-07 23:29:16.871 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - ffmpeg version 3.4 Copyright (c) 2000-2017 the FFmpeg developers
+2020-05-07 23:29:16.872 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   built with gcc 7.2.0 (GCC)
+2020-05-07 23:29:16.872 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-cuda --enable-cuvid --enable-d3d11va --enable-nvenc --enable-dxva2 --enable-avisynth --enable-libmfx
+2020-05-07 23:29:16.872 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libavutil      55. 78.100 / 55. 78.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libavcodec     57.107.100 / 57.107.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libavformat    57. 83.100 / 57. 83.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libavdevice    57. 10.100 / 57. 10.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libavfilter     6.107.100 /  6.107.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libswscale      4.  8.100 /  4.  8.100
+2020-05-07 23:29:16.873 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libswresample   2.  9.100 /  2.  9.100
+2020-05-07 23:29:16.874 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   libpostproc    54.  7.100 / 54.  7.100
+2020-05-07 23:29:16.916 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4':
+2020-05-07 23:29:16.916 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   Metadata:
+2020-05-07 23:29:16.916 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     major_brand     : mp42
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     minor_version   : 0
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     compatible_brands: mp42mp41
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   Duration: 00:00:48.13, start: 0.000000, bitrate: 2203 kb/s
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 540x960, 1881 kb/s, 25 fps, 25 tbr, 25k tbn, 50 tbc (default)
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:29:16.917 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:29:16.918 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:29:16.918 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : AVC Coding
+2020-05-07 23:29:16.918 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+2020-05-07 23:29:16.918 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:29:16.919 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:29:16.920 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:29:16.921 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - Stream mapping:
+2020-05-07 23:29:16.924 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+2020-05-07 23:29:16.925 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - Press [q] to stop, [?] for help
+2020-05-07 23:29:16.944 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - [swscaler @ 000001dfca73b1e0] deprecated pixel format used, make sure you did set range correctly
+2020-05-07 23:29:16.955 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - Output #0, image2, to '\vtuweb\videoOutput\1588865268306\preview\image_%05d.jpg':
+2020-05-07 23:29:16.956 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -   Metadata:
+2020-05-07 23:29:16.956 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     major_brand     : mp42
+2020-05-07 23:29:16.956 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     minor_version   : 0
+2020-05-07 23:29:16.956 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     compatible_brands: mp42mp41
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     encoder         : Lavf57.83.100
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Stream #0:0(eng): Video: mjpeg, yuvj420p(pc), 540x960, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc (default)
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Metadata:
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       creation_time   : 2019-12-09T14:00:31.000000Z
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       handler_name    : Alias Data Handler
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       encoder         : Lavc57.107.100 mjpeg
+2020-05-07 23:29:16.957 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -     Side data:
+2020-05-07 23:29:16.958 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 -       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+2020-05-07 23:29:17.428 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+2020-05-07 23:29:17.934 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    1 fps=1.0 q=4.0 size=N/A time=00:00:09.64 bitrate=N/A speed=9.57x    
+2020-05-07 23:29:18.479 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    2 fps=1.3 q=2.0 size=N/A time=00:00:19.24 bitrate=N/A speed=12.7x    
+2020-05-07 23:29:18.953 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    3 fps=1.5 q=1.6 size=N/A time=00:00:28.84 bitrate=N/A speed=14.3x    
+2020-05-07 23:29:19.467 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    4 fps=1.6 q=2.0 size=N/A time=00:00:38.44 bitrate=N/A speed=15.1x    
+2020-05-07 23:29:19.970 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    4 fps=1.3 q=2.0 size=N/A time=00:00:38.44 bitrate=N/A speed=12.6x    
+2020-05-07 23:29:20.281 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - frame=    5 fps=1.5 q=4.0 Lsize=N/A time=00:00:48.04 bitrate=N/A speed=14.3x    
+2020-05-07 23:29:20.282 INFO  --- [Thread-21] com.vtu.web.util.MediaUtil Line:1188 - video:274kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+2020-05-07 23:29:20.306 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:375 - --- 已执行的FFmepg命令： ---[ffmpeg -i E:\vtuweb\videoImport\1588865268306\3d633b6f2a714121b8f2735bf8766860.mp4 -vf select=between(n\240\1200)*not(mod(n\240)) -vsync 0 \vtuweb\videoOutput\1588865268306\preview\image_%05d.jpg] 已执行完毕,执行结果： 正常
+2020-05-07 23:29:20.309 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:111 - 正在获取第0张图片
+2020-05-07 23:29:20.603 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:111 - 正在获取第1张图片
+2020-05-07 23:29:20.692 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:111 - 正在获取第2张图片
+2020-05-07 23:29:20.824 INFO  --- [http-nio-8765-exec-3] com.vtu.web.util.MediaUtil Line:111 - 正在获取第3张图片
+2020-05-07 23:29:26.304 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:360 - 阿里云开始上传3d633b6f2a714121b8f2735bf8766860.mp4
+2020-05-07 23:29:31.858 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:366 - 3d633b6f2a714121b8f2735bf8766860.mp4:上传成功
+2020-05-07 23:29:31.859 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:368 - 阿里云开始上传video/videoImport/1588865268306/3d633b6f2a714121b8f2735bf8766860.mp4
+2020-05-07 23:29:31.859 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:360 - 阿里云开始上传synthesisFile.mp4
+2020-05-07 23:29:32.751 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:366 - synthesisFile.mp4:上传成功
+2020-05-07 23:29:32.752 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:368 - 阿里云开始上传video/videoOutput/1588865268306/compress/synthesisFile.mp4
+2020-05-07 23:29:32.752 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:360 - 阿里云开始上传synthesisFile.jpg
+2020-05-07 23:29:32.853 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:366 - synthesisFile.jpg:上传成功
+2020-05-07 23:29:32.853 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:368 - 阿里云开始上传video/videoOutput/1588865268306/synthesis/synthesisFile.jpg
+2020-05-07 23:29:32.854 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:360 - 阿里云开始上传image_00005.jpg
+2020-05-07 23:29:32.898 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:366 - image_00005.jpg:上传成功
+2020-05-07 23:29:32.899 INFO  --- [http-nio-8765-exec-3] com.vtu.web.controller.SellerController Line:368 - 阿里云开始上传video/videoOutput/1588865268306/preview/image_00005.jpg
+2020-05-07 23:30:28.088 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:35:28.090 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:40:28.092 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:45:28.115 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:50:28.117 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:55:28.120 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:58:19.504 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 23:58:19.521 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 23:58:19.573 INFO  --- [Thread-2] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-05-07 23:58:19.582 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-05-07 23:58:22.590 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-05-07 23:58:22.621 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-05-07 23:58:22.638 INFO  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-05-07 23:58:26.181 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-05-07 23:58:28.430 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-05-07 23:58:28.430 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-05-07 23:58:28.431 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-05-07 23:58:28.461 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-05-07 23:58:28.961 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 23:58:30.570 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-05-07 23:58:30.575 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 23:58:30.575 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 23:58:30.575 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-05-07 23:58:30.576 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-05-07 23:58:30.848 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:58:30.854 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-05-07 23:58:30.854 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-05-07 23:58:30.855 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-05-07 23:58:30.855 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-05-07 23:58:30.856 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-05-07 23:58:30.857 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-05-07 23:58:30.857 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-05-07 23:58:30.866 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-05-07 23:58:30.867 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-05-07 23:58:30.869 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 23:58:30.873 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1588867110873 with initial instances count: 2
+2020-05-07 23:58:30.874 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1588867110874, current=UP, previous=STARTING]
+2020-05-07 23:58:30.918 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-05-07 23:58:30.935 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 23:58:30.953 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 23:58:31.032 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 23:58:32.083 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 7.73 seconds (JVM running for 3801.031)
+2020-05-07 23:58:32.290 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:58:32.307 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-05-07 23:58:32.309 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-07 23:58:32.311 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-05-07 23:58:32.314 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:58:32.315 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2fa824df
+2020-05-07 23:58:33.314 INFO  --- [PollingServerListUpdater-1] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:59:41.502 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 23:59:41.514 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 23:59:41.515 INFO  --- [Thread-24] com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-service
+2020-05-07 23:59:41.521 INFO  --- [Thread-24] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
+2020-05-07 23:59:44.527 INFO  --- [Thread-24] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
+2020-05-07 23:59:44.545 INFO  --- [Thread-24] com.netflix.discovery.DiscoveryClient Line:942 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - deregister  status: 200
+2020-05-07 23:59:44.555 INFO  --- [Thread-24] com.netflix.discovery.DiscoveryClient Line:929 - Completed shut down of DiscoveryClient
+2020-05-07 23:59:49.443 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:652 - The following profiles are active: dev
+2020-05-07 23:59:51.252 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8765"]
+2020-05-07 23:59:51.253 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-05-07 23:59:51.253 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-05-07 23:59:51.303 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-05-07 23:59:51.671 INFO  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 23:59:52.825 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:365 - Initializing Eureka in region us-east-1
+2020-05-07 23:59:52.827 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 23:59:52.828 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 23:59:52.828 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2020-05-07 23:59:52.828 INFO  --- [restartedMain] com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2020-05-07 23:59:53.044 INFO  --- [restartedMain] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-05-07 23:59:53.047 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:976 - Disable delta property : false
+2020-05-07 23:59:53.047 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:977 - Single vip registry refresh property : null
+2020-05-07 23:59:53.047 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:978 - Force full registry fetch : false
+2020-05-07 23:59:53.048 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:979 - Application is null : false
+2020-05-07 23:59:53.048 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:980 - Registered Applications size is zero : true
+2020-05-07 23:59:53.048 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:982 - Application version is -1: true
+2020-05-07 23:59:53.049 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1065 - Getting all instance registry info from the eureka server
+2020-05-07 23:59:53.055 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1074 - The response status is 200
+2020-05-07 23:59:53.056 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1288 - Starting heartbeat executor: renew interval is: 30
+2020-05-07 23:59:53.058 INFO  --- [restartedMain] com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 23:59:53.059 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:465 - Discovery Client initialized at timestamp 1588867193059 with initial instances count: 2
+2020-05-07 23:59:53.061 INFO  --- [restartedMain] com.netflix.discovery.DiscoveryClient Line:1323 - Saw local status change event StatusChangeEvent [timestamp=1588867193061, current=UP, previous=STARTING]
+2020-05-07 23:59:53.067 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765: registering service...
+2020-05-07 23:59:53.072 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8765"]
+2020-05-07 23:59:53.076 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:853 - DiscoveryClient_WEB/DESKTOP-CTAQJKR.bbrouter:web:8765 - registration status: 204
+2020-05-07 23:59:53.407 INFO  --- [restartedMain] com.vtu.web.WebApplication Line:59  - Started WebApplication in 6.706 seconds (JVM running for 3882.356)
+2020-05-07 23:59:53.465 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:59:53.468 INFO  --- [restartedMain] com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-service
+2020-05-07 23:59:53.468 INFO  --- [restartedMain] com.netflix.loadbalancer.BaseLoadBalancer Line:197 - Client: service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-07 23:59:53.470 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2020-05-07 23:59:53.471 INFO  --- [restartedMain] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:59:53.472 INFO  --- [restartedMain] com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service,current list of Servers=[DESKTOP-CTAQJKR.bbrouter:8762],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-CTAQJKR.bbrouter:8762;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6d8ad3cf
+2020-05-07 23:59:54.478 INFO  --- [PollingServerListUpdater-1] com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-07 23:59:56.283 INFO  --- [http-nio-8765-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'

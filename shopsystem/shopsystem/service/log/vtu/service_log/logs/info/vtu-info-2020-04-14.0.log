@@ -1,0 +1,14 @@
+2020-04-14 00:40:11.568 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:652 - The following profiles are active: dev
+2020-04-14 00:40:13.552 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-04-14 00:40:15.693 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-04-14 00:40:17.286 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-14 00:40:17.302 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-14 00:40:20.068 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:59  - Started TestDaoMapper in 10.969 seconds (JVM running for 12.256)
+2020-04-14 00:40:21.458 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-04-14 00:42:47.030 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:652 - The following profiles are active: dev
+2020-04-14 00:42:49.033 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-04-14 00:42:51.237 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-04-14 00:42:54.579 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-14 00:42:54.611 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-14 00:42:57.314 INFO  --- [main] com.vtu.service.mapper.TestDaoMapper Line:59  - Started TestDaoMapper in 12.855 seconds (JVM running for 14.193)
+2020-04-14 00:42:59.001 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed

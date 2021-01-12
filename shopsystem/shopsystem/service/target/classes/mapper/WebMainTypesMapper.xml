@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.WebMainTypesMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.WebMainTypes">
+    <result column="main_type_id" jdbcType="INTEGER" property="mainTypeId" />
+    <result column="main_tye_name" jdbcType="VARCHAR" property="mainTyeName" />
+    <result column="main_tye_desc" jdbcType="VARCHAR" property="mainTyeDesc" />
+  </resultMap>
+  <insert id="insert" parameterType="com.vtu.model.WebMainTypes">
+    insert into tb_web_main_types (main_type_id, main_tye_name, main_tye_desc
+      )
+    values (#{mainTypeId,jdbcType=INTEGER}, #{mainTyeName,jdbcType=VARCHAR}, #{mainTyeDesc,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.WebMainTypes">
+    insert into tb_web_main_types
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="mainTypeId != null">
+        main_type_id,
+      </if>
+      <if test="mainTyeName != null">
+        main_tye_name,
+      </if>
+      <if test="mainTyeDesc != null">
+        main_tye_desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="mainTypeId != null">
+        #{mainTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="mainTyeName != null">
+        #{mainTyeName,jdbcType=VARCHAR},
+      </if>
+      <if test="mainTyeDesc != null">
+        #{mainTyeDesc,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

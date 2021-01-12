@@ -1,0 +1,118 @@
+2020-05-29 00:20:10.919 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 00:20:10.928 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 00:20:10.965 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 00:20:10.966 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 00:20:10.967 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 00:20:11.006 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 00:20:11.008 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 00:20:11.008 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 00:20:11.046 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 00:20:26.918 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 00:20:26.919 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 00:20:26.956 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 00:22:20.107 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 00:22:20.108 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 00:22:20.143 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:08:18.876 DEBUG --- [restartedMain] org.apache.ibatis.logging.LogFactory Line:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-29 23:10:02.208 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.selectByAuthCode Line:143 - ==>  Preparing: select account_id, account, password, name, phone, id_card, remain, is_vip, is_shoper, email, email_send_time,wxId, qqId,authCode,isAuth,sex,head_portrait_url from tb_customer where authCode = ? 
+2020-05-29 23:10:02.254 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.selectByAuthCode Line:143 - ==> Parameters: 1234(String)
+2020-05-29 23:10:02.320 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.selectByAuthCode Line:143 - <==      Total: 1
+2020-05-29 23:10:02.328 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerVipMapper.selectByAccountId Line:143 - ==>  Preparing: select id, account_id, vip_detail_id, start_time, end_time, is_vip from tb_customer_vip where account_id = ? 
+2020-05-29 23:10:02.330 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerVipMapper.selectByAccountId Line:143 - ==> Parameters: 12(Long)
+2020-05-29 23:10:02.367 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerVipMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:10:02.369 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.updateByPrimaryKey Line:143 - ==>  Preparing: update tb_customer set account = ?, password = ?, name = ?, sex = ?, phone = ?, id_card = ?, remain = ?, is_vip = ?, is_shoper = ?, email = ?, email_send_time = ?, wxId = ?, qqId = ?, authCode = ?, isAuth = ?, head_portrait_url = ? where account_id = ? 
+2020-05-29 23:10:02.372 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.updateByPrimaryKey Line:143 - ==> Parameters: VT20191105001621984(String), null, whh(String), 男(String), 1511485465235(String), null, null, null, null, 35114854657@163.com(String), 2019-11-05 00:16:21:982(String), null, null, 1234(String), true(String), blog/2020-05-05/cf7d92441aae405e9462d96f88587db8-image_00002.jpg(String), 12(Long)
+2020-05-29 23:10:02.441 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.CustomerMapper.updateByPrimaryKey Line:143 - <==    Updates: 1
+2020-05-29 23:10:05.346 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition_COUNT Line:143 - ==>  Preparing: SELECT count(0) FROM tb_works w WHERE w.status LIKE concat('%', ?, '%') AND w.type LIKE concat('%', ?, '%') 
+2020-05-29 23:10:05.347 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition_COUNT Line:143 - ==> Parameters: pass(String), 1(String)
+2020-05-29 23:10:05.382 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition_COUNT Line:143 - <==      Total: 1
+2020-05-29 23:10:05.385 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition Line:143 - ==>  Preparing: SELECT w.* FROM tb_works w WHERE w.status LIKE concat('%',?,'%') and w.type LIKE concat('%',?,'%') ORDER BY w.works_id desc LIMIT ? 
+2020-05-29 23:10:05.387 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition Line:143 - ==> Parameters: pass(String), 1(String), 4(Integer)
+2020-05-29 23:10:05.446 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksByCondition Line:143 - <==      Total: 4
+2020-05-29 23:10:11.306 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:10:11.308 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:10:11.349 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:10:11.350 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:10:11.352 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:10:11.411 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:10:11.412 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:10:11.416 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:10:11.459 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:10:14.086 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:10:14.088 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:10:14.133 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:36:31.022 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:36:31.023 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:36:31.062 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:36:31.063 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:36:31.067 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:36:31.106 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:36:31.111 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:36:31.112 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:36:31.164 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:36:35.116 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:36:35.117 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:36:35.155 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:37:13.066 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:37:13.070 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:37:13.076 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:37:13.077 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:37:13.108 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:37:13.110 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:37:13.112 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:37:13.119 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:37:13.151 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:37:15.704 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:37:15.705 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:37:15.747 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:39:51.461 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:39:51.463 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:39:51.468 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:39:51.469 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:39:51.480 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:39:51.481 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:39:51.503 DEBUG --- [http-nio-8762-exec-6] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:39:51.505 DEBUG --- [http-nio-8762-exec-4] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:39:51.521 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:39:54.883 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:39:54.884 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:39:54.924 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:42:31.151 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:42:31.153 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:42:31.156 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:42:31.158 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:42:31.160 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:42:31.162 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:42:31.188 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:42:31.199 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:42:31.203 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:43:05.186 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:43:05.188 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:43:05.229 DEBUG --- [http-nio-8762-exec-3] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:43:42.874 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:43:42.875 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:43:42.982 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:54:44.113 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:54:44.115 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:54:44.159 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:54:44.167 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:54:44.168 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:54:44.218 DEBUG --- [http-nio-8762-exec-10] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:54:44.228 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:54:44.230 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:54:44.299 DEBUG --- [http-nio-8762-exec-8] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:54:46.545 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:54:46.546 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:54:46.591 DEBUG --- [http-nio-8762-exec-5] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1
+2020-05-29 23:55:16.458 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:55:16.458 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:55:16.459 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 1(String)
+2020-05-29 23:55:16.459 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 2(String)
+2020-05-29 23:55:16.497 DEBUG --- [http-nio-8762-exec-9] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 1
+2020-05-29 23:55:16.501 DEBUG --- [http-nio-8762-exec-2] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 0
+2020-05-29 23:55:16.505 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE status LIKE concat('%',?,'%') and account_id LIKE concat('%', ?,'%') and type LIKE concat('%', ?,'%') 
+2020-05-29 23:55:16.507 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - ==> Parameters: refer(String), 12(Long), 3(String)
+2020-05-29 23:55:16.545 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.selectByAccountId Line:143 - <==      Total: 2
+2020-05-29 23:55:18.750 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==>  Preparing: SELECT * FROM tb_works WHERE works_id = ? 
+2020-05-29 23:55:18.751 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - ==> Parameters: 163(String)
+2020-05-29 23:55:18.801 DEBUG --- [http-nio-8762-exec-7] com.vtu.mapper.WorksMapper.getWorksById Line:143 - <==      Total: 1

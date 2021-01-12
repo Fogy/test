@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="seller_tab_3">
+    <!--上传开始-->
+    <div class="tab-pane active" id="tab_3">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="m-heading-1 border-green m-bordered">
+                    <h3>申明</h3>
+                    <p> 上传素材后，请尽快完善素材信息，只有填写好信息的素材才会被审核</p>
+                    <p>直接上传视频素材mp4,mov格式,自动生成预览视频</p>
+                    <p>上传AE模板或视频素材包,请点击"+模板/压缩包",需要同时添加压缩包及预览视频2个文件</p>
+                    <p>上传平面PSD或AI压缩包请点击"+平面",需要压缩包及预览图2个文件</p>
+                    <p>直接上传PSD、JPG图片和PNG图片自动生成预览图</p>
+                    <p>直接上传音效、配乐请点击"+音效/配乐",自动生成预览声音</p>
+                    <p style="color: red"><b>文件上传体积不能超过1G;</b></p>
+
+                </div>
+            </div>
+
+            <div class="portlet-body">
+                <div class="">
+                    <div class="row" style="margin: 20px">
+                        <div class="col-md-3">
+                            <span class="btn green fileinput-button">
+                                <i class="fa fa-plus"></i>
+                                <span> 视频素材 </span>
+                                <input type="file" name="video" id="video" multiple="multiple">
+                            </span>
+                        </span>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="javascript:;" id="temp" class="btn green fileinput-button">
+                                <i class="fa fa-plus"></i>模板/压缩包
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="javascript:;" id="plane" class="btn green fileinput-button">
+                                <i class="fa fa-plus"></i>平面
+                            </a>
+                        </div>
+                        <!--<div class="col-md-3">
+                            <a href="javascript:;" class="btn green fileinput-button">
+                                <i class="fa fa-plus"></i>音效/配乐
+                            </a>
+                        </div>-->
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-md-10">
+                            <div id="progress" style="display: none" class="progress progress-striped active">
+                                <div  class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-element-card mt-element-overlay">
+
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="portlet light bordered">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject">
+                                                我的编辑作品
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="tabbable-line boxless margin-bottom-20">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#tab_works" data-toggle="tab" aria-expanded="true">视频素材</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#tab_temps" data-toggle="tab" aria-expanded="false">模板/压缩包</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#tab_plane" data-toggle="tab" aria-expanded="false">平面</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_works">
+                                                    <div class="row" style="margin-top: 20px" id="listWorks">
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab_temps">
+                                                    <div class="row">
+                                                        <div class="row" style="margin-top: 20px" id="listTemps">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab_plane">
+                                                    <div class="row">
+                                                        <div class="row" style="margin-top: 20px" id="listPlane">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--上传模板和压缩包modal-->
+                <div class="modal fade" id="temp_model" tabindex="-1" role="temp_model" aria-hidden="true">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">模板/压缩包</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" id="tempForm" class="form-horizontal">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label"></label>
+                                            <div class="col-md-6">
+                                                <span class="fileinput-button">
+                                                    <button class="btn green btn-block">
+                                                        <i class="fa fa-plus"></i>预览视频
+                                                    </button>
+                                                    <input type="file" name="synthesis" id="synthesisFile" multiple="multiple">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label"></label>
+                                            <div class="col-md-6">
+                                                <span class="fileinput-button">
+
+                                                    <button class="btn green btn-block">
+                                                        <i class="fa fa-plus"></i>压缩包
+                                                    </button>
+                                                    <input type="file" name="compress" id="compressFile" multiple="multiple">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="temp-cancel" data-bb-handler="cancel" data-dismiss="modal" type="button" class="btn btn-default">取消</button>
+                                <button id="temp-sub" data-bb-handler="confirm" type="button" class="btn green">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--上传平面modal-->
+                <div class="modal fade" id="plane_model" tabindex="-1" role="plane_model" aria-hidden="true">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">平面</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" id="planeForm" class="form-horizontal">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label"></label>
+                                            <div class="col-md-6">
+                                                <span class="fileinput-button">
+                                                    <button class="btn green btn-block">
+                                                        <i class="fa fa-plus"></i>平面
+                                                    </button>
+                                                    <input type="file" name="plane" id="planeFile" multiple="multiple">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="plane-cancel" data-bb-handler="cancel" data-dismiss="modal" type="button" class="btn btn-default">取消</button>
+                                <button id="plane-sub" data-bb-handler="confirm" type="button" class="btn green">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--上传结束-->
+</div>
+</div>
+</html>

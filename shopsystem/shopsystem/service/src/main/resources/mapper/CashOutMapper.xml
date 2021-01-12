@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.CashOutMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.CashOut">
+    <id column="cash_out_id" jdbcType="BIGINT" property="cashOutId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="amount" jdbcType="DECIMAL" property="amount" />
+    <result column="apply_time" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="payee_account" jdbcType="VARCHAR" property="payeeAccount" />
+    <result column="payee_real_name" jdbcType="VARCHAR" property="payeeRealName" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    cash_out_id, account_id, amount, apply_time, status, payee_account, payee_real_name, 
+    pay_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_cash_out
+    where cash_out_id = #{cashOutId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_cash_out
+    where cash_out_id = #{cashOutId,jdbcType=BIGINT}
+  </delete>
+  <select id="selectByAccountIdAndStatus" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_cash_out
+    where account_id = #{accountId,jdbcType=BIGINT} and status = #{status,jdbcType=VARCHAR}
+  </select>
+  <insert id="insert" parameterType="com.vtu.model.CashOut">
+    insert into tb_cash_out (cash_out_id, account_id, amount, 
+      apply_time, status, payee_account, 
+      payee_real_name, pay_time)
+    values (#{cashOutId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{amount,jdbcType=DECIMAL}, 
+      #{applyTime,jdbcType=TIMESTAMP}, #{status,jdbcType=VARCHAR}, #{payeeAccount,jdbcType=VARCHAR}, 
+      #{payeeRealName,jdbcType=VARCHAR}, #{payTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.CashOut">
+    insert into tb_cash_out
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cashOutId != null">
+        cash_out_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="amount != null">
+        amount,
+      </if>
+      <if test="applyTime != null">
+        apply_time,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="payeeAccount != null">
+        payee_account,
+      </if>
+      <if test="payeeRealName != null">
+        payee_real_name,
+      </if>
+      <if test="payTime != null">
+        pay_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cashOutId != null">
+        #{cashOutId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="applyTime != null">
+        #{applyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="payeeAccount != null">
+        #{payeeAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="payeeRealName != null">
+        #{payeeRealName,jdbcType=VARCHAR},
+      </if>
+      <if test="payTime != null">
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.CashOut">
+    update tb_cash_out
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="amount != null">
+        amount = #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="applyTime != null">
+        apply_time = #{applyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="payeeAccount != null">
+        payee_account = #{payeeAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="payeeRealName != null">
+        payee_real_name = #{payeeRealName,jdbcType=VARCHAR},
+      </if>
+      <if test="payTime != null">
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where cash_out_id = #{cashOutId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.CashOut">
+    update tb_cash_out
+    set account_id = #{accountId,jdbcType=BIGINT},
+      amount = #{amount,jdbcType=DECIMAL},
+      apply_time = #{applyTime,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=VARCHAR},
+      payee_account = #{payeeAccount,jdbcType=VARCHAR},
+      payee_real_name = #{payeeRealName,jdbcType=VARCHAR},
+      pay_time = #{payTime,jdbcType=TIMESTAMP}
+    where cash_out_id = #{cashOutId,jdbcType=BIGINT}
+  </update>
+</mapper>

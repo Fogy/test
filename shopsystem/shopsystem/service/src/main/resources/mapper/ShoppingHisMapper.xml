@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.ShoppingHisMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.ShoppingHis">
+    <id column="shopping_his_id" jdbcType="BIGINT" property="shoppingHisId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="shopping_id" jdbcType="BIGINT" property="shoppingId" />
+    <result column="shoping_date" jdbcType="TIMESTAMP" property="shopingDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    shopping_his_id, account_id, shopping_id, shoping_date
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_shopping_his
+    where shopping_his_id = #{shoppingHisId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_shopping_his
+    where shopping_his_id = #{shoppingHisId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.ShoppingHis">
+    insert into tb_shopping_his (shopping_his_id, account_id, shopping_id, 
+      shoping_date)
+    values (#{shoppingHisId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{shoppingId,jdbcType=BIGINT}, 
+      #{shopingDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.ShoppingHis">
+    insert into tb_shopping_his
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="shoppingHisId != null">
+        shopping_his_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="shoppingId != null">
+        shopping_id,
+      </if>
+      <if test="shopingDate != null">
+        shoping_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="shoppingHisId != null">
+        #{shoppingHisId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="shoppingId != null">
+        #{shoppingId,jdbcType=BIGINT},
+      </if>
+      <if test="shopingDate != null">
+        #{shopingDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.ShoppingHis">
+    update tb_shopping_his
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="shoppingId != null">
+        shopping_id = #{shoppingId,jdbcType=BIGINT},
+      </if>
+      <if test="shopingDate != null">
+        shoping_date = #{shopingDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where shopping_his_id = #{shoppingHisId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.ShoppingHis">
+    update tb_shopping_his
+    set account_id = #{accountId,jdbcType=BIGINT},
+      shopping_id = #{shoppingId,jdbcType=BIGINT},
+      shoping_date = #{shopingDate,jdbcType=TIMESTAMP}
+    where shopping_his_id = #{shoppingHisId,jdbcType=BIGINT}
+  </update>
+</mapper>

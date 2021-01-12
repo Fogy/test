@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.HisExtractMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.HisExtract">
+    <id column="his_extract_id" jdbcType="BIGINT" property="hisExtractId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="alipay_count" jdbcType="VARCHAR" property="alipayCount" />
+    <result column="alipay_name" jdbcType="VARCHAR" property="alipayName" />
+    <result column="manage_id" jdbcType="BIGINT" property="manageId" />
+    <result column="is_success" jdbcType="CHAR" property="isSuccess" />
+    <result column="current_remain" jdbcType="DECIMAL" property="currentRemain" />
+    <result column="extra_amount" jdbcType="DECIMAL" property="extraAmount" />
+    <result column="after_remain" jdbcType="DECIMAL" property="afterRemain" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.vtu.model.HisExtract">
+    <result column="error_msg" jdbcType="LONGVARCHAR" property="msg" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    his_extract_id, account_id, alipay_count, alipay_name, manage_id, is_success, current_remain, 
+    extra_amount, after_remain
+  </sql>
+  <sql id="Blob_Column_List">
+    error_msg
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_his_extract
+    where his_extract_id = #{hisExtractId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_his_extract
+    where his_extract_id = #{hisExtractId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.HisExtract">
+    insert into tb_his_extract (his_extract_id, account_id, alipay_count, 
+      alipay_name, manage_id, is_success, 
+      current_remain, extra_amount, after_remain, 
+      error_msg)
+    values (#{hisExtractId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{alipayCount,jdbcType=VARCHAR}, 
+      #{alipayName,jdbcType=VARCHAR}, #{manageId,jdbcType=BIGINT}, #{isSuccess,jdbcType=CHAR}, 
+      #{currentRemain,jdbcType=DECIMAL}, #{extraAmount,jdbcType=DECIMAL}, #{afterRemain,jdbcType=DECIMAL}, 
+      #{msg,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.HisExtract">
+    insert into tb_his_extract
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="hisExtractId != null">
+        his_extract_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="alipayCount != null">
+        alipay_count,
+      </if>
+      <if test="alipayName != null">
+        alipay_name,
+      </if>
+      <if test="manageId != null">
+        manage_id,
+      </if>
+      <if test="isSuccess != null">
+        is_success,
+      </if>
+      <if test="currentRemain != null">
+        current_remain,
+      </if>
+      <if test="extraAmount != null">
+        extra_amount,
+      </if>
+      <if test="afterRemain != null">
+        after_remain,
+      </if>
+      <if test="msg != null">
+        error_msg,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="hisExtractId != null">
+        #{hisExtractId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="alipayCount != null">
+        #{alipayCount,jdbcType=VARCHAR},
+      </if>
+      <if test="alipayName != null">
+        #{alipayName,jdbcType=VARCHAR},
+      </if>
+      <if test="manageId != null">
+        #{manageId,jdbcType=BIGINT},
+      </if>
+      <if test="isSuccess != null">
+        #{isSuccess,jdbcType=CHAR},
+      </if>
+      <if test="currentRemain != null">
+        #{currentRemain,jdbcType=DECIMAL},
+      </if>
+      <if test="extraAmount != null">
+        #{extraAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="afterRemain != null">
+        #{afterRemain,jdbcType=DECIMAL},
+      </if>
+      <if test="msg != null">
+        #{msg,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.HisExtract">
+    update tb_his_extract
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="alipayCount != null">
+        alipay_count = #{alipayCount,jdbcType=VARCHAR},
+      </if>
+      <if test="alipayName != null">
+        alipay_name = #{alipayName,jdbcType=VARCHAR},
+      </if>
+      <if test="manageId != null">
+        manage_id = #{manageId,jdbcType=BIGINT},
+      </if>
+      <if test="isSuccess != null">
+        is_success = #{isSuccess,jdbcType=CHAR},
+      </if>
+      <if test="currentRemain != null">
+        current_remain = #{currentRemain,jdbcType=DECIMAL},
+      </if>
+      <if test="extraAmount != null">
+        extra_amount = #{extraAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="afterRemain != null">
+        after_remain = #{afterRemain,jdbcType=DECIMAL},
+      </if>
+      <if test="msg != null">
+        error_msg = #{msg,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where his_extract_id = #{hisExtractId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.vtu.model.HisExtract">
+    update tb_his_extract
+    set account_id = #{accountId,jdbcType=BIGINT},
+      alipay_count = #{alipayCount,jdbcType=VARCHAR},
+      alipay_name = #{alipayName,jdbcType=VARCHAR},
+      manage_id = #{manageId,jdbcType=BIGINT},
+      is_success = #{isSuccess,jdbcType=CHAR},
+      current_remain = #{currentRemain,jdbcType=DECIMAL},
+      extra_amount = #{extraAmount,jdbcType=DECIMAL},
+      after_remain = #{afterRemain,jdbcType=DECIMAL},
+      error_msg = #{msg,jdbcType=LONGVARCHAR}
+    where his_extract_id = #{hisExtractId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.HisExtract">
+    update tb_his_extract
+    set account_id = #{accountId,jdbcType=BIGINT},
+      alipay_count = #{alipayCount,jdbcType=VARCHAR},
+      alipay_name = #{alipayName,jdbcType=VARCHAR},
+      manage_id = #{manageId,jdbcType=BIGINT},
+      is_success = #{isSuccess,jdbcType=CHAR},
+      current_remain = #{currentRemain,jdbcType=DECIMAL},
+      extra_amount = #{extraAmount,jdbcType=DECIMAL},
+      after_remain = #{afterRemain,jdbcType=DECIMAL}
+    where his_extract_id = #{hisExtractId,jdbcType=BIGINT}
+  </update>
+</mapper>

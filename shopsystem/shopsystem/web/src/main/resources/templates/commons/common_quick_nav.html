@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+    <div th:fragment="common_quick_nav">
+        <nav class="quick-nav">
+            <a class="quick-nav-trigger" href="#0">
+                <span aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="http://vtuweb.com/" target="_blank" class="active">
+                        <span>我的收藏</span>
+                        <i class="icon-basket"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vtuweb.com/" target="_blank">
+                        <span>联系客服</span>
+                        <i class="icon-users"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vtuweb.com/" target="_blank">
+                        <span>购买历史</span>
+                        <i class="icon-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vtuweb.com/" target="_blank">
+                        <span>下载历史</span>
+                        <i class="icon-graph"></i>
+                    </a>
+                </li>
+            </ul>
+            <span aria-hidden="true" class="quick-nav-bg"></span>
+        </nav>
+        <div class="quick-nav-overlay"></div>
+    </div>
+</html>

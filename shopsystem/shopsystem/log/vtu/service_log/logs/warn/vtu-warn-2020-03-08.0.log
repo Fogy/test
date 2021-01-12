@@ -1,0 +1,70 @@
+2020-03-08 00:57:02.658 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1583600222658, current=DOWN, previous=UP]
+2020-03-08 00:57:06.736 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 14:55:07.746 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-08 14:55:07.762 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-08 14:55:08.543 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-08 15:47:42.009 WARN  --- [http-nio-8762-exec-8] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'accountId' is not present]
+2020-03-08 15:48:40.706 WARN  --- [http-nio-8762-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'accountId' is not present]
+2020-03-08 16:55:49.901 WARN  --- [http-nio-8762-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 18:05:54.179 WARN  --- [http-nio-8762-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 18:05:57.894 WARN  --- [http-nio-8762-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 20:04:09.966 WARN  --- [http-nio-8762-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:44:14.379 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1583678654379, current=DOWN, previous=UP]
+2020-03-08 22:44:39.492 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-08 22:44:39.503 WARN  --- [restartedMain] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-03-08 22:44:40.813 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-03-08 22:50:04.479 WARN  --- [http-nio-8762-exec-5] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:50:23.016 WARN  --- [http-nio-8762-exec-10] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:50:26.520 WARN  --- [http-nio-8762-exec-3] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:51:05.828 WARN  --- [http-nio-8762-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:54:08.445 WARN  --- [http-nio-8762-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:54:17.934 WARN  --- [http-nio-8762-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:56:53.907 WARN  --- [http-nio-8762-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 22:57:10.447 WARN  --- [http-nio-8762-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'pageNum' is not present]
+2020-03-08 23:33:21.450 WARN  --- [Thread-11] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1583681601450, current=DOWN, previous=UP]
+2020-03-08 23:33:24.489 WARN  --- [DiscoveryClient-0] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-03-08 23:33:24.489 WARN  --- [DiscoveryClient-1] com.netflix.discovery.TimedSupervisorTask Line:88  - task supervisor shutting down, can't accept the task
+2020-03-08 23:33:25.472 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:26.053 WARN  --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:26.059 WARN  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:28.523 WARN  --- [Thread-11] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:29.486 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:29.491 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:849 - DiscoveryClient_SERVICE/DESKTOP-CTAQJKR.bbrouter:service:8762 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-08 23:33:29.493 WARN  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.InstanceInfoReplicator Line:125 - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-08 23:33:30.064 WARN  --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:30.333 WARN  --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-08 23:33:32.534 WARN  --- [Thread-11] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient Line:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect

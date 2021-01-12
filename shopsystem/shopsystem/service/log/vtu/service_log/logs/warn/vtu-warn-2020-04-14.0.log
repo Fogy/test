@@ -1,0 +1,4 @@
+2020-04-14 00:40:17.286 WARN  --- [main] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-04-14 00:40:17.302 WARN  --- [main] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-04-14 00:42:54.579 WARN  --- [main] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.
+2020-04-14 00:42:54.611 WARN  --- [main] com.netflix.config.sources.URLConfigurationSource Line:121 - No URLs will be polled as dynamic configuration sources.

@@ -1,0 +1,5 @@
+com\vtu\service\mapper\TestDaoMapper.class
+com\vtu\service\mapper\TestCommetMapper.class
+com\vtu\service\ServiceApplicationTests.class
+com\vtu\service\TestWorksService.class
+com\vtu\service\mapper\TestVipMapper.class

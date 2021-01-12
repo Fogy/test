@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<div th:fragment="seller_tab_2">
+    <p th:if="${session.customer.shoperStatus=='pass'}"></p>
+    <!-- 签约 -->
+    <div class="tab-pane" id="tab_2_1" th:if="${session.customer.shoperStatus =='pass'}">
+        <div class="portlet light bordered">
+            <div class="note note-success">
+                <h4 class="block">恭喜您</h4>
+                <p> 成功签约VTU网。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab_2">
+        <div class="portlet light bordered" th:if="${session.customer.shoperStatus !='pass'}">
+            <div class="portlet-body">
+                <div class="mt-element-step">
+                    <div class="row step-line">
+                        <div class="mt-step-desc">
+                            <div class="font-dark bold uppercase">签约流程</div>
+                            <div class="caption-desc font-grey-cascade"> 操作简单快捷签约
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-md-3 mt-step-col first done">
+                            <div class="mt-step-number bg-white">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="mt-step-title uppercase font-grey-cascade">上传</div>
+                            <div class="mt-step-content font-grey-cascade">云端急速上传</div>
+                        </div>
+                        <div class="col-md-3 mt-step-col active">
+                            <div class="mt-step-number bg-white">
+                                <i class="fa fa-cc-visa"></i>
+                            </div>
+                            <div class="mt-step-title uppercase font-grey-cascade">审核</div>
+                            <div class="mt-step-content font-grey-cascade">认真对待每件作品</div>
+                        </div>
+                        <div class="col-md-3 mt-step-col active">
+                            <div class="mt-step-number bg-white">
+                                <i class="fa fa-cc-visa"></i>
+                            </div>
+                            <div class="mt-step-title uppercase font-grey-cascade">销售</div>
+                            <div class="mt-step-content font-grey-cascade">80%高额提成</div>
+                        </div>
+                        <div class="col-md-3 mt-step-col last">
+                            <div class="mt-step-number bg-white">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="mt-step-title uppercase font-grey-cascade">提现</div>
+                            <div class="mt-step-content font-grey-cascade">一个工作日内提现
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-lg-offset-6 col-md-offset-6">
+                        <label class="mt-checkbox mt-checkbox-outline">
+                            <input type="checkbox"> 我已阅读并知晓
+                            <span></span>
+                        </label>
+                        <a href="">本网站声明</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4">
+                        <div class="btn-group btn-group btn-group-justified">
+                            <a href="javascript:;" id="person_sign" class="btn blue"> 个人签约 </a>
+                            <a href="javascript:;" class="btn green"> 企业签约 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

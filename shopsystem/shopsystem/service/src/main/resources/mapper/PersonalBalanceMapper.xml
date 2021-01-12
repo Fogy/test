@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.PersonalBalanceMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.PersonalBalance">
+    <id column="personal_money_id" jdbcType="BIGINT" property="personalMoneyId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    personal_money_id, account_id, balance
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_personal_balance
+    where personal_money_id = #{personalMoneyId,jdbcType=BIGINT}
+  </select>
+
+  <select id="getPersonalBalanceByAccountId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_personal_balance
+    where account_id = #{accountId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_personal_balance
+    where personal_money_id = #{personalMoneyId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.PersonalBalance">
+    insert into tb_personal_balance (personal_money_id, account_id, balance
+      )
+    values (#{personalMoneyId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{balance,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.PersonalBalance">
+    insert into tb_personal_balance
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="personalMoneyId != null">
+        personal_money_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="balance != null">
+        balance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="personalMoneyId != null">
+        #{personalMoneyId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="balance != null">
+        #{balance,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.PersonalBalance">
+    update tb_personal_balance
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="balance != null">
+        balance = #{balance,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where personal_money_id = #{personalMoneyId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.PersonalBalance">
+    update tb_personal_balance
+    set account_id = #{accountId,jdbcType=BIGINT},
+      balance = #{balance,jdbcType=DECIMAL}
+    where personal_money_id = #{personalMoneyId,jdbcType=BIGINT}
+  </update>
+</mapper>

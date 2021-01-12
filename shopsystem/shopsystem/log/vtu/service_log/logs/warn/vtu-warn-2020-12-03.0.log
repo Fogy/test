@@ -1,0 +1,27 @@
+2020-12-03 00:22:05.895 WARN  --- [Thread-34] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606926125895, current=DOWN, previous=UP]
+2020-12-03 00:22:24.654 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:24:29.878 WARN  --- [http-nio-8762-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:27:31.496 WARN  --- [http-nio-8762-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:27:31.574 WARN  --- [http-nio-8762-exec-1] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:27:53.306 WARN  --- [http-nio-8762-exec-10] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:29:16.277 WARN  --- [http-nio-8762-exec-3] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:30:51.851 WARN  --- [Thread-32] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606926651851, current=DOWN, previous=UP]
+2020-12-03 00:31:04.116 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:32:29.145 WARN  --- [http-nio-8762-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Line:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'vipType' is not present]
+2020-12-03 00:33:30.198 WARN  --- [Thread-31] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606926810198, current=DOWN, previous=UP]
+2020-12-03 00:33:47.708 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:35:04.349 WARN  --- [Thread-31] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606926904349, current=DOWN, previous=UP]
+2020-12-03 00:35:21.283 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:40:42.059 WARN  --- [Thread-28] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927242058, current=DOWN, previous=UP]
+2020-12-03 00:40:58.821 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:43:07.467 WARN  --- [Thread-33] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927387467, current=DOWN, previous=UP]
+2020-12-03 00:43:23.677 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:45:58.859 WARN  --- [Thread-30] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927558859, current=DOWN, previous=UP]
+2020-12-03 00:46:14.499 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:48:09.195 WARN  --- [Thread-29] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927689195, current=DOWN, previous=UP]
+2020-12-03 00:48:25.303 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:50:08.079 WARN  --- [Thread-30] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927808079, current=DOWN, previous=UP]
+2020-12-03 00:50:24.803 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:52:04.578 WARN  --- [Thread-32] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606927924577, current=DOWN, previous=UP]
+2020-12-03 00:52:39.809 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
+2020-12-03 00:56:49.701 WARN  --- [Thread-32] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1606928209701, current=DOWN, previous=UP]

@@ -1,0 +1,116 @@
+2020-10-06 00:23:37.687 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:23:40.197 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:23:41.796 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:23:44.116 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:23:44.134 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:23:47.928 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 13.682 seconds (JVM running for 16.61)
+2020-10-06 00:23:48.771 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:27:50.875 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:27:53.055 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:27:54.402 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:27:55.984 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:27:56.002 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:27:59.845 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.467 seconds (JVM running for 14.749)
+2020-10-06 00:28:00.590 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:31:25.516 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:31:27.631 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:31:28.859 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:31:30.525 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:31:30.541 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:31:33.672 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.575 seconds (JVM running for 14.697)
+2020-10-06 00:31:34.106 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:32:47.649 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:32:49.968 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:32:51.593 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:32:53.698 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:32:53.717 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:32:56.667 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.483 seconds (JVM running for 14.558)
+2020-10-06 00:32:57.467 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:38:18.280 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:38:20.590 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:38:21.743 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:38:23.509 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:38:23.541 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:38:27.506 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.55 seconds (JVM running for 14.647)
+2020-10-06 00:38:28.447 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:42:37.040 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:42:39.396 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:42:40.568 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:42:42.286 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:42:42.305 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:42:45.291 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.96 seconds (JVM running for 15.212)
+2020-10-06 00:42:45.904 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:46:00.391 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:46:02.418 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:46:03.575 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:46:05.197 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:46:05.217 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:46:08.309 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 11.816 seconds (JVM running for 13.934)
+2020-10-06 00:46:08.948 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:47:09.790 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:47:11.863 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:47:13.154 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:47:13.703 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:49:35.251 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:49:37.280 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:49:38.573 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:49:40.231 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:49:40.253 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:49:43.278 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 11.328 seconds (JVM running for 13.471)
+2020-10-06 00:49:44.044 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:51:03.465 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:51:05.730 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:51:07.160 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:51:08.798 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:51:08.818 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:51:12.028 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 12.659 seconds (JVM running for 14.997)
+2020-10-06 00:51:12.763 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:58:31.340 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:58:33.416 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:58:34.567 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:58:36.258 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:58:36.279 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:58:39.423 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 11.953 seconds (JVM running for 14.083)
+2020-10-06 00:58:40.135 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 00:59:11.665 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 00:59:14.690 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 00:59:15.894 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 00:59:17.941 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:59:17.967 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 00:59:21.823 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 14.084 seconds (JVM running for 17.674)
+2020-10-06 01:01:15.908 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 03:51:04.889 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 03:51:09.045 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 03:51:10.590 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 03:51:13.996 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:51:14.028 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:51:19.714 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 20.408 seconds (JVM running for 23.819)
+2020-10-06 03:51:21.274 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 03:52:50.173 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 03:52:52.946 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 03:52:54.360 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 03:52:56.444 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:52:56.464 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:52:59.551 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 13.654 seconds (JVM running for 16.165)
+2020-10-06 03:53:00.355 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 03:53:56.159 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 03:54:00.187 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 03:54:01.813 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 03:54:03.947 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:54:03.967 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 03:54:07.493 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 15.9 seconds (JVM running for 19.658)
+2020-10-06 03:54:08.387 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 04:00:13.795 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 04:00:18.228 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 04:00:20.200 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 04:00:24.630 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 04:00:24.648 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 04:00:30.183 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 21.868 seconds (JVM running for 24.761)
+2020-10-06 04:00:31.288 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
+2020-10-06 04:05:51.447 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:652 - The following profiles are active: dev
+2020-10-06 04:05:54.608 INFO  --- [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2020-10-06 04:05:56.031 INFO  --- [main] com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2020-10-06 04:05:58.467 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 04:05:58.486 INFO  --- [main] com.netflix.config.sources.URLConfigurationSource Line:126 - URLs to be used as dynamic configuration source: [file:/E:/works/shopsystem/service/target/classes/config.properties]
+2020-10-06 04:06:01.603 INFO  --- [main] com.vtu.service.mapper.TestCommetMapper Line:59  - Started TestCommetMapper in 14.802 seconds (JVM running for 17.61)
+2020-10-06 04:06:02.300 INFO  --- [Thread-7] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed

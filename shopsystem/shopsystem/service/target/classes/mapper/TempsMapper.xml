@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtu.mapper.TempsMapper">
+  <resultMap id="BaseResultMap" type="com.vtu.model.Temps">
+    <id column="temps_id" jdbcType="BIGINT" property="tempsId" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="temps_title" jdbcType="VARCHAR" property="tempsTitle" />
+    <result column="temps_desc" jdbcType="VARCHAR" property="tempsDesc" />
+    <result column="temps_type" jdbcType="VARCHAR" property="tempsType" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="key_word" jdbcType="VARCHAR" property="keyWord" />
+    <result column="types_id" jdbcType="INTEGER" property="typesId" />
+    <result column="temps_status" jdbcType="VARCHAR" property="tempsStatus" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="colorSytem" jdbcType="VARCHAR" property="colorsytem" />
+    <result column="temps_duration" jdbcType="VARCHAR" property="tempsDuration" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="resolution" jdbcType="VARCHAR" property="resolution" />
+    <result column="temp_url" jdbcType="VARCHAR" property="tempUrl" />
+    <result column="compress_url" jdbcType="VARCHAR" property="compressUrl" />
+    <result column="preview_url" jdbcType="VARCHAR" property="previewUrl" />
+    <result column="synthesis_url" jdbcType="VARCHAR" property="synthesisUrl" />
+    <result column="zip_url" jdbcType="VARCHAR" property="zipUrl" />
+    <result column="temps_md5" jdbcType="VARCHAR" property="tempsMd5" />
+    <result column="temps_size" jdbcType="DOUBLE" property="tempsSize" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    temps_id, account_id, temps_title, temps_desc, temps_type, price, key_word, types_id, 
+    temps_status, channel, colorSytem, temps_duration, version, resolution, temp_url, 
+    compress_url, preview_url, synthesis_url, zip_url, temps_md5, temps_size
+  </sql>
+
+  <select id="getReferTemps" parameterType="com.vtu.model.Temps" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM tb_temps where account_id=#{accountId} AND temps_status=#{tempsStatus}
+  </select>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_temps
+    where temps_id = #{tempsId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_temps
+    where temps_id = #{tempsId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.vtu.model.Temps">
+    insert into tb_temps (temps_id, account_id, temps_title, 
+      temps_desc, temps_type, price, 
+      key_word, types_id, temps_status, 
+      channel, colorSytem, temps_duration, 
+      version, resolution, temp_url, 
+      compress_url, preview_url, synthesis_url, 
+      zip_url, temps_md5, temps_size
+      )
+    values (#{tempsId,jdbcType=BIGINT}, #{accountId,jdbcType=BIGINT}, #{tempsTitle,jdbcType=VARCHAR}, 
+      #{tempsDesc,jdbcType=VARCHAR}, #{tempsType,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
+      #{keyWord,jdbcType=VARCHAR}, #{typesId,jdbcType=INTEGER}, #{tempsStatus,jdbcType=VARCHAR}, 
+      #{channel,jdbcType=VARCHAR}, #{colorsytem,jdbcType=VARCHAR}, #{tempsDuration,jdbcType=VARCHAR}, 
+      #{version,jdbcType=VARCHAR}, #{resolution,jdbcType=VARCHAR}, #{tempUrl,jdbcType=VARCHAR}, 
+      #{compressUrl,jdbcType=VARCHAR}, #{previewUrl,jdbcType=VARCHAR}, #{synthesisUrl,jdbcType=VARCHAR}, 
+      #{zipUrl,jdbcType=VARCHAR}, #{tempsMd5,jdbcType=VARCHAR}, #{tempsSize,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.vtu.model.Temps">
+    insert into tb_temps
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tempsId != null">
+        temps_id,
+      </if>
+      <if test="accountId != null">
+        account_id,
+      </if>
+      <if test="tempsTitle != null">
+        temps_title,
+      </if>
+      <if test="tempsDesc != null">
+        temps_desc,
+      </if>
+      <if test="tempsType != null">
+        temps_type,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="keyWord != null">
+        key_word,
+      </if>
+      <if test="typesId != null">
+        types_id,
+      </if>
+      <if test="tempsStatus != null">
+        temps_status,
+      </if>
+      <if test="channel != null">
+        channel,
+      </if>
+      <if test="colorsytem != null">
+        colorSytem,
+      </if>
+      <if test="tempsDuration != null">
+        temps_duration,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="resolution != null">
+        resolution,
+      </if>
+      <if test="tempUrl != null">
+        temp_url,
+      </if>
+      <if test="compressUrl != null">
+        compress_url,
+      </if>
+      <if test="previewUrl != null">
+        preview_url,
+      </if>
+      <if test="synthesisUrl != null">
+        synthesis_url,
+      </if>
+      <if test="zipUrl != null">
+        zip_url,
+      </if>
+      <if test="tempsMd5 != null">
+        temps_md5,
+      </if>
+      <if test="tempsSize != null">
+        temps_size,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tempsId != null">
+        #{tempsId,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null">
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="tempsTitle != null">
+        #{tempsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsDesc != null">
+        #{tempsDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsType != null">
+        #{tempsType,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="keyWord != null">
+        #{keyWord,jdbcType=VARCHAR},
+      </if>
+      <if test="typesId != null">
+        #{typesId,jdbcType=INTEGER},
+      </if>
+      <if test="tempsStatus != null">
+        #{tempsStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="colorsytem != null">
+        #{colorsytem,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsDuration != null">
+        #{tempsDuration,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="resolution != null">
+        #{resolution,jdbcType=VARCHAR},
+      </if>
+      <if test="tempUrl != null">
+        #{tempUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="compressUrl != null">
+        #{compressUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="previewUrl != null">
+        #{previewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="synthesisUrl != null">
+        #{synthesisUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="zipUrl != null">
+        #{zipUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsMd5 != null">
+        #{tempsMd5,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsSize != null">
+        #{tempsSize,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vtu.model.Temps">
+    update tb_temps
+    <set>
+      <if test="accountId != null">
+        account_id = #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="tempsTitle != null">
+        temps_title = #{tempsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsDesc != null">
+        temps_desc = #{tempsDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsType != null">
+        temps_type = #{tempsType,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="keyWord != null">
+        key_word = #{keyWord,jdbcType=VARCHAR},
+      </if>
+      <if test="typesId != null">
+        types_id = #{typesId,jdbcType=INTEGER},
+      </if>
+      <if test="tempsStatus != null">
+        temps_status = #{tempsStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        channel = #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="colorsytem != null">
+        colorSytem = #{colorsytem,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsDuration != null">
+        temps_duration = #{tempsDuration,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="resolution != null">
+        resolution = #{resolution,jdbcType=VARCHAR},
+      </if>
+      <if test="tempUrl != null">
+        temp_url = #{tempUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="compressUrl != null">
+        compress_url = #{compressUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="previewUrl != null">
+        preview_url = #{previewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="synthesisUrl != null">
+        synthesis_url = #{synthesisUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="zipUrl != null">
+        zip_url = #{zipUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsMd5 != null">
+        temps_md5 = #{tempsMd5,jdbcType=VARCHAR},
+      </if>
+      <if test="tempsSize != null">
+        temps_size = #{tempsSize,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where temps_id = #{tempsId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vtu.model.Temps">
+    update tb_temps
+    set account_id = #{accountId,jdbcType=BIGINT},
+      temps_title = #{tempsTitle,jdbcType=VARCHAR},
+      temps_desc = #{tempsDesc,jdbcType=VARCHAR},
+      temps_type = #{tempsType,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      key_word = #{keyWord,jdbcType=VARCHAR},
+      types_id = #{typesId,jdbcType=INTEGER},
+      temps_status = #{tempsStatus,jdbcType=VARCHAR},
+      channel = #{channel,jdbcType=VARCHAR},
+      colorSytem = #{colorsytem,jdbcType=VARCHAR},
+      temps_duration = #{tempsDuration,jdbcType=VARCHAR},
+      version = #{version,jdbcType=VARCHAR},
+      resolution = #{resolution,jdbcType=VARCHAR},
+      temp_url = #{tempUrl,jdbcType=VARCHAR},
+      compress_url = #{compressUrl,jdbcType=VARCHAR},
+      preview_url = #{previewUrl,jdbcType=VARCHAR},
+      synthesis_url = #{synthesisUrl,jdbcType=VARCHAR},
+      zip_url = #{zipUrl,jdbcType=VARCHAR},
+      temps_md5 = #{tempsMd5,jdbcType=VARCHAR},
+      temps_size = #{tempsSize,jdbcType=DOUBLE}
+    where temps_id = #{tempsId,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,7 @@
+2020-04-19 22:14:53.192 DEBUG --- [restartedMain] org.apache.ibatis.logging.LogFactory Line:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-19 22:17:56.315 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks_COUNT Line:143 - ==>  Preparing: SELECT count(0) FROM tb_works w LEFT JOIN tb_works_url u ON w.works_id = u.works_id WHERE w.works_status LIKE concat('%', ?, '%') 
+2020-04-19 22:17:56.353 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks_COUNT Line:143 - ==> Parameters: pass(String)
+2020-04-19 22:17:56.441 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks_COUNT Line:143 - <==      Total: 1
+2020-04-19 22:17:56.441 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks Line:143 - ==>  Preparing: SELECT w.works_id, w.works_title, w.works_desc, w.price,w.key_word, w.types_id,w.works_status,w.colorSytem,w.works_duration,channel,version, u.works_url_id,u.works_id, u.works_url,u.works_md5,u.works_name,u.works_size,u.compress_url,u.preview_url,u.synthesis_url FROM tb_works w LEFT JOIN tb_works_url u ON w.works_id = u.works_id WHERE w.works_status LIKE concat('%',?,'%') ORDER BY w.works_id desc LIMIT ? 
+2020-04-19 22:17:56.441 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks Line:143 - ==> Parameters: pass(String), 4(Integer)
+2020-04-19 22:17:56.488 DEBUG --- [http-nio-8762-exec-1] com.vtu.mapper.WorksMapper.findAuditingWorks Line:143 - <==      Total: 2
