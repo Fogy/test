@@ -1,6 +1,0 @@
-2020-07-06 00:22:01.699 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
-2020-07-06 02:16:11.817 WARN  --- [Thread-2] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1593972971817, current=DOWN, previous=UP]
-2020-07-06 02:16:23.364 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
-2020-07-06 02:17:16.476 WARN  --- [Thread-12] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1593973036476, current=DOWN, previous=UP]
-2020-07-06 02:17:24.422 WARN  --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:60  - Unable to start LiveReload server
-2020-07-06 02:40:23.126 WARN  --- [Thread-31] com.netflix.discovery.DiscoveryClient Line:1321 - Saw local status change event StatusChangeEvent [timestamp=1593974423126, current=DOWN, previous=UP]

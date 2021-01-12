@@ -1,9 +1,0 @@
-2020-11-19 00:03:37.138 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
-2020-11-19 00:08:37.146 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
-2020-11-19 00:13:37.146 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
-2020-11-19 00:18:37.154 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
-2020-11-19 00:23:37.161 INFO  --- [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
-2020-11-19 00:26:56.303 INFO  --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient Line:844 - DiscoveryClient_SERVICE/DESKTOP-CTAQJKR:service:8762: registering service...
-2020-11-19 00:26:56.349 INFO  --- [Thread-33] com.alibaba.druid.pool.DruidDataSource Line:1825 - {dataSource-1} closed
-2020-11-19 00:26:56.349 INFO  --- [Thread-33] com.netflix.discovery.DiscoveryClient Line:906 - Shutting down DiscoveryClient ...
-2020-11-19 00:26:59.362 INFO  --- [Thread-33] com.netflix.discovery.DiscoveryClient Line:940 - Unregistering ...
