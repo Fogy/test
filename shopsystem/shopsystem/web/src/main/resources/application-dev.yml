@@ -1,9 +1,0 @@
-aliyun-oss:
-  #bucket名称
-  bucketApp: vtuweb
-  domainApp: https://vtuweb.oss-cn-beijing.aliyuncs.com/
-  region: oss-cn-beijing
-  endpoint : https://oss-cn-beijing.aliyuncs.com
-  accessKeyId: LTAI4FhSP3QWmNEKfWeL7VVF
-  accessKeySecret: d3PXwksxtCOGwFOb3pR1ZSXPWAHjkY
-  filehost: blog
